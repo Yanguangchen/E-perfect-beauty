@@ -8,13 +8,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyANVtpKIQLZRTDEUhMCCnwEdCj77BZvJjw",
-  authDomain: "tabernaclebeauty-cd1fd.firebaseapp.com",
-  projectId: "tabernaclebeauty-cd1fd",
-  storageBucket: "tabernaclebeauty-cd1fd.firebasestorage.app",
-  messagingSenderId: "534167355991",
-  appId: "1:534167355991:web:8448b4102e2ad843075912",
-  measurementId: "G-DVBC692RN4",
+  apiKey: "AIzaSyDVmYID7GvGMeXJ3eBktkLwpTwn79SRYE8",
+  authDomain: "e-perfect.firebaseapp.com",
+  projectId: "e-perfect",
+  storageBucket: "e-perfect.firebasestorage.app",
+  messagingSenderId: "823756908481",
+  appId: "1:823756908481:web:d51491469ac04b689ab140",
+  measurementId: "G-NP3NK5SZGS",
 };
 
 export const app = initializeApp(firebaseConfig);

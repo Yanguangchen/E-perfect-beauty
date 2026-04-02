@@ -3,7 +3,7 @@ service cloud.firestore {
   match /databases/{database}/documents {
     function isBlogEditor() {
       return request.auth != null
-        && request.auth.uid == "zA0E4O6xwpRXuCIaDQY4yt3k9wq1";
+        && request.auth.uid == "aBUvcqlQpWdSwvr2qI72XUiLX523";
     }
 
     // Blog posts: anyone can read; only the designated editor UID may write.

@@ -23,7 +23,7 @@ Marketing site for **E-Perfect Beauty**: glass / neumorphic styling, hero with *
 
 **Section anchors (home):** `#home`, `#services`, `#other-services`, `#reviews`, `#visit`, plus per-card IDs `#service-brows`, … `#service-makeup`, and other-section cards (`#service-ear-candling`, …).
 
-**Sitemap / crawl:** [`sitemap.xml`](sitemap.xml) — `/`, `pricing.html`, `contact.html`, `blog.html`. [`robots.txt`](robots.txt) — `Sitemap: https://www.tabernaclebeauty.com/sitemap.xml`. **`admin.html`** is not listed (editor UI, `noindex`).
+**Sitemap / crawl:** [`sitemap.xml`](sitemap.xml) — `/`, `pricing.html`, `contact.html`, `blog.html`. [`robots.txt`](robots.txt) — `Sitemap: https://www.eperfectbeauty.com/sitemap.xml`. **`admin.html`** is not listed (editor UI, `noindex`).
 
 ## Third-party embeds
 
@@ -77,7 +77,7 @@ Luxury-adjacent, calm, beauty-specific: refined, radiant, polished, expert, pers
 
 - **`manifest.json`** — PWA-style manifest; icons from `Assets/favicon.png`.
 - **Favicon** — `Assets/favicon.png` (also `apple-touch-icon`, OG/Twitter image in meta).
-- **Open Graph / Twitter** — Placeholder absolute URLs under **`https://www.tabernaclebeauty.com/`**; update when the live domain is final. Prefer a 1200×630 `og:image` for sharing.
+- **Open Graph / Twitter** — Placeholder absolute URLs under **`https://www.eperfectbeauty.com/`**; update when the live domain is final. Prefer a 1200×630 `og:image` for sharing.
 - **Sitemap** — Keep [`sitemap.xml`](sitemap.xml) in sync with new public HTML routes; bump `<lastmod>` when a page changes materially. Do not add `admin.html` unless you remove `noindex` and intend it to rank.
 
 ## Running locally

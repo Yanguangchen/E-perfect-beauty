@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.tabernaclebeauty.com/sitemap.xml
+Sitemap: https://www.eperfectbeauty.com/sitemap.xml
