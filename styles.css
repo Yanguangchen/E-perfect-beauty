@@ -1709,6 +1709,22 @@ body.nav-drawer-open {
   font-style: italic;
 }
 
+.footer__authorship {
+  margin: 0;
+  font-size: 0.76rem;
+  color: rgba(74, 58, 64, 0.5);
+}
+
+.footer__authorship a {
+  color: inherit;
+  text-decoration-color: rgba(74, 58, 64, 0.45);
+}
+
+.footer__authorship a:hover {
+  color: var(--pink-5);
+  text-decoration-color: currentColor;
+}
+
 .footer__signin-wrap {
   margin: 18px 0 0;
 }
