@@ -2006,8 +2006,9 @@ body.nav-drawer-open {
   .hero {
     min-height: auto;
     padding-top: 40px;
-    /* Let floating cards extend slightly past the hero box when the stack is single-column */
-    overflow: visible;
+    /* Keep vertical overflow for floating cards, but prevent horizontal bounce/jitter on mobile */
+    overflow-x: clip;
+    overflow-y: visible;
   }
 
   .hero-visual {
@@ -2112,7 +2113,8 @@ body.nav-drawer-open {
 
   /* Floating cards stay absolute on #heroStack; inset from edges so .hero overflow does not clip */
   .hero {
-    overflow: visible;
+    overflow-x: clip;
+    overflow-y: visible;
   }
 
   .hero-visual {
