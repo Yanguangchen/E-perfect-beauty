@@ -24,7 +24,7 @@ Static marketing site for **E-Perfect Beauty** (Singapore): hero with rotating s
 | [`js/blog-render.js`](js/blog-render.js) | Shared post card rendering |
 | [`firestore.rules`](firestore.rules) | Firestore security rules (deploy to Firebase) |
 | [`firebase.json`](firebase.json) | Firebase CLI: Firestore rules path |
-| [`Assets/`](Assets/) | `favicon.png`, hero `.mp4` files, etc. |
+| [`Assets/`](Assets/) | `favicon.jpg`, hero `.mp4` files, etc. |
 
 ## Run locally
 

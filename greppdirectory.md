@@ -21,7 +21,7 @@ Quick reference for searching this repo with ripgrep (`rg`) or grep. Paths are r
 | `sitemap.xml` | Public URLs: `/`, `pricing.html`, `contact.html`, `blog.html` (not `admin.html`) |
 | `robots.txt` | `Allow: /` + `Sitemap:` URL |
 | `manifest.json` | PWA: `standalone`, icons, `theme_color`, `start_url` |
-| `Assets/favicon.png` | Favicon, Apple touch, manifest & social meta image |
+| `Assets/favicon.jpg` | Favicon, Apple touch, manifest & social meta image |
 | `Assets/hero/*.mp4` | Hero videos: `brows`, `facial`, `waxing`, `HairColor`, `Lashes` |
 | `README.md` | Project overview, local run, Firebase deploy, link to `context.md` / this file |
 | `context.md` | Project purpose, pages, anchors, embeds, Firebase, conventions |

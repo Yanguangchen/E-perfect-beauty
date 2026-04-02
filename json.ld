@@ -20,8 +20,8 @@
         "E-Perfect Beauty Service"
       ],
       "url": "https://www.eperfectbeauty.com/",
-      "image": "https://www.eperfectbeauty.com/Assets/favicon.png",
-      "logo": "https://www.eperfectbeauty.com/Assets/favicon.png",
+      "image": "https://www.eperfectbeauty.com/Assets/favicon.jpg",
+      "logo": "https://www.eperfectbeauty.com/Assets/favicon.jpg",
       "description": "Expert embroidery (brow, lip, eyeliner), anti-wrinkle treatments, Korean misty eyebrow, face lifting for a youthful look, and facial spa including Hydra Aqua Peel and hydra glow booster — E Perfect Eyebrow Studio at 550B Segar Rd, Singapore. Message for quotes. Appointments recommended.",
       "telephone": "+6587787867",
       "address": {

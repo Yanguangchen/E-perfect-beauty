@@ -75,8 +75,8 @@ Luxury-adjacent, calm, beauty-specific: refined, radiant, polished, expert, pers
 
 ## Web app & SEO
 
-- **`manifest.json`** — PWA-style manifest; icons from `Assets/favicon.png`.
-- **Favicon** — `Assets/favicon.png` (also `apple-touch-icon`, OG/Twitter image in meta).
+- **`manifest.json`** — PWA-style manifest; icons from `Assets/favicon.jpg`.
+- **Favicon** — `Assets/favicon.jpg` (also `apple-touch-icon`, OG/Twitter image in meta).
 - **Open Graph / Twitter** — Placeholder absolute URLs under **`https://www.eperfectbeauty.com/`**; update when the live domain is final. Prefer a 1200×630 `og:image` for sharing.
 - **Sitemap** — Keep [`sitemap.xml`](sitemap.xml) in sync with new public HTML routes; bump `<lastmod>` when a page changes materially. Do not add `admin.html` unless you remove `noindex` and intend it to rank.
 
