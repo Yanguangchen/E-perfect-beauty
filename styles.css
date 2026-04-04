@@ -1219,6 +1219,33 @@ body.nav-drawer-open {
   opacity: 0.92;
 }
 
+.service-card__trust-pill {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(142, 120, 132, 0.35);
+  background: rgba(255, 255, 255, 0.38);
+  color: rgba(74, 58, 64, 0.82);
+  transition:
+    color 0.35s ease,
+    background 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s var(--motion-ease);
+}
+
+.service-card:hover .service-card__trust-pill {
+  border-color: rgba(217, 155, 179, 0.45);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.service-card__trust-pill:hover {
+  color: var(--pink-5);
+  border-color: rgba(217, 155, 179, 0.65);
+}
+
 .service-card__book {
   text-decoration: none;
   color: var(--pink-5);
@@ -1904,6 +1931,7 @@ body.nav-drawer-open {
   .service-card p,
   .service-card__book,
   .service-card__pricing-pill,
+  .service-card__trust-pill,
   .review-card,
   .review-avatar,
   .reviews-section__note a,
@@ -2410,7 +2438,8 @@ body.nav-drawer-open {
 
 /* —— Contact page —— */
 .page-contact .contact-main,
-.page-about .contact-main {
+.page-about .contact-main,
+.page-service-trust .contact-main {
   position: relative;
   padding: 72px 0 120px;
   min-height: min(88vh, 900px);
@@ -2649,6 +2678,25 @@ body.nav-drawer-open {
   flex-wrap: wrap;
   gap: 12px;
   align-items: center;
+}
+
+/* —— Service trust page —— */
+.trust-intro {
+  max-width: 680px;
+}
+
+.trust-categories {
+  max-width: 720px;
+  margin: 0 auto;
+  animation: fadeUp 0.7s var(--motion-ease) 0.1s both;
+}
+
+.trust-category-block {
+  scroll-margin-top: 96px;
+}
+
+.trust-page-cta {
+  justify-content: center;
 }
 
 @media (max-width: 860px) {
