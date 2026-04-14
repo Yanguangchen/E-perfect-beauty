@@ -13,18 +13,28 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="format-detection" content="telephone=yes" />
 
-  <title>Blog editor — E-Perfect Beauty</title>
-  <meta name="description" content="Sign in to publish blog posts for E-Perfect Beauty." />
-  <meta name="robots" content="noindex, nofollow" />
-  <link rel="canonical" href="https://www.eperfectbeauty.com/admin.html" />
+  <title>Media — E-Perfect Beauty | Studio gallery Singapore</title>
+  <meta name="description" content="Photos and video from E-Perfect Beauty — a glimpse of treatments, results, and the studio atmosphere at E Perfect Eyebrow Studio, Singapore." />
+  <meta name="keywords" content="E-Perfect Beauty gallery, beauty salon photos Singapore, eyebrow studio images, E Perfect Eyebrow Studio media" />
+  <meta name="author" content="E-Perfect Beauty" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.eperfectbeauty.com/media.html" />
 
   <meta property="og:site_name" content="E-Perfect Beauty" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_SG" />
-  <meta property="og:title" content="Blog editor — E-Perfect Beauty" />
-  <meta property="og:description" content="Editor sign-in for E-Perfect Beauty blog." />
-  <meta property="og:url" content="https://www.eperfectbeauty.com/admin.html" />
+  <meta property="og:title" content="Media — E-Perfect Beauty" />
+  <meta property="og:description" content="Studio moments, treatments, and results — E Perfect Eyebrow Studio, Singapore." />
+  <meta property="og:url" content="https://www.eperfectbeauty.com/media.html" />
   <meta property="og:image" content="https://www.eperfectbeauty.com/Assets/favicon.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="E-Perfect Beauty" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Media — E-Perfect Beauty" />
+  <meta name="twitter:description" content="Photos and video from our Singapore studio." />
+  <meta name="twitter:image" content="https://www.eperfectbeauty.com/Assets/favicon.jpg" />
+  <meta name="twitter:image:alt" content="E-Perfect Beauty" />
 
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" type="image/jpeg" href="Assets/favicon.jpg" sizes="32x32" />
@@ -36,7 +46,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="page-admin">
+<body class="page-media">
   <!-- Elfsight Website Translator | Kuts&Kurl -->
   <script src="https://elfsightcdn.com/platform.js" async></script>
   <div class="site-elfsight" role="region" aria-label="Translate this website">
@@ -51,10 +61,9 @@
         <li><a href="index.html#services">Services</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="about-us.html">About</a></li>
-        <li><a href="media.html">Media</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
         <li><a href="index.html#reviews">Reviews</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="admin.html" aria-current="page">Editor</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
@@ -106,10 +115,9 @@
           <a href="index.html#services" class="nav-mobile-drawer__link">Services</a>
           <a href="pricing.html" class="nav-mobile-drawer__link">Pricing</a>
           <a href="about-us.html" class="nav-mobile-drawer__link">About</a>
-          <a href="media.html" class="nav-mobile-drawer__link">Media</a>
+          <a href="media.html" class="nav-mobile-drawer__link" aria-current="page">Media</a>
           <a href="index.html#reviews" class="nav-mobile-drawer__link">Reviews</a>
           <a href="blog.html" class="nav-mobile-drawer__link">Blog</a>
-          <a href="admin.html" class="nav-mobile-drawer__link" aria-current="page">Editor</a>
           <a href="contact.html" class="nav-mobile-drawer__link">Contact</a>
         </nav>
 
@@ -132,44 +140,99 @@
     </div>
   </div>
 
-  <main class="blog-main admin-main" id="main">
-    <div class="container blog-main__inner">
-      <header class="blog-page-header">
-        <h1 class="blog-page-header__title">Blog editor</h1>
-        <p class="blog-page-header__lede">
-          Sign in with Google to publish or delete posts. The public blog is read-only on
-          <a href="blog.html">Blog</a>.
+  <main class="contact-main" id="media">
+    <div class="contact-main__bg" aria-hidden="true">
+      <div class="blob one"></div>
+      <div class="blob two"></div>
+      <div class="blob three"></div>
+    </div>
+
+    <div class="container contact-main__inner">
+      <header class="contact-intro">
+        <h1>Media</h1>
+        <p>
+          A quiet look inside the studio — moments from treatments, detail work, and the calm atmosphere we cultivate for every visit.
         </p>
       </header>
 
-      <div class="blog-auth-bar" aria-label="Editor sign-in">
-        <div id="adminAuthSignedOut" class="blog-auth-bar__signed-out">
-          <button type="button" class="btn-primary" id="adminSignInBtn">Sign in with Google</button>
-          <p class="blog-auth-bar__hint">Only authorised accounts can publish. Visitors read posts on the blog page.</p>
-        </div>
-        <div id="adminAuthSignedIn" class="blog-auth-bar__signed-in" hidden>
-          <span class="blog-auth-bar__user" id="adminUserDisplay"></span>
-          <button type="button" class="btn-secondary" id="adminSignOutBtn">Sign out</button>
-        </div>
-      </div>
+      <section class="media-showcase" aria-label="Photo and video gallery">
+        <div class="media-grid">
+          <article class="media-card media-card--video">
+            <div class="media-card__frame media-card__frame--video">
+              <video
+                controls
+                playsinline
+                preload="metadata"
+                aria-label="Studio video sample"
+              >
+                <source src="Assets/samples/1.mp4" type="video/mp4" />
+                Your browser does not support embedded video. You can still browse the images below.
+              </video>
+            </div>
+            <p class="media-card__caption">Studio video</p>
+          </article>
 
-      <p class="blog-status" id="adminStatus" role="status" aria-live="polite"></p>
+          <article class="media-card">
+            <div class="media-card__frame media-card__frame--photo">
+              <img
+                src="Assets/samples/2.jpeg"
+                alt="Beauty treatment sample photo 1"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="media-card__caption">Gallery 1</p>
+          </article>
 
-      <section class="blog-composer" id="adminComposer" aria-labelledby="admin-composer-heading" hidden>
-        <h2 class="blog-composer__title" id="admin-composer-heading">New post</h2>
-        <form class="blog-form" id="adminForm">
-          <label class="blog-form__label" for="adminTitleInput">Title</label>
-          <input class="blog-form__input" type="text" id="adminTitleInput" name="title" autocomplete="off" required />
-          <label class="blog-form__label" for="adminContentInput">Body</label>
-          <textarea class="blog-form__textarea" id="adminContentInput" name="content" required></textarea>
-          <button type="submit" class="btn-primary blog-form__submit" id="adminPublishBtn">Publish</button>
-        </form>
+          <article class="media-card">
+            <div class="media-card__frame media-card__frame--photo">
+              <img
+                src="Assets/samples/3.jpeg"
+                alt="Beauty treatment sample photo 2"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="media-card__caption">Gallery 2</p>
+          </article>
+
+          <article class="media-card">
+            <div class="media-card__frame media-card__frame--photo">
+              <img
+                src="Assets/samples/4.jpeg"
+                alt="Beauty treatment sample photo 3"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="media-card__caption">Gallery 3</p>
+          </article>
+
+          <article class="media-card">
+            <div class="media-card__frame media-card__frame--photo">
+              <img
+                src="Assets/samples/5.jpeg"
+                alt="Beauty treatment sample photo 4"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <p class="media-card__caption">Gallery 4</p>
+          </article>
+        </div>
       </section>
 
-      <section class="blog-posts-section" aria-labelledby="admin-posts-heading">
-        <h2 class="blog-posts-section__title" id="admin-posts-heading">All posts</h2>
-        <div class="blog-posts" id="adminPosts"></div>
-      </section>
+      <p class="media-page-note">
+        Planning a treatment? <a href="index.html#services">View our services</a> or <a href="https://wa.me/6587787867" target="_blank" rel="noopener noreferrer">message us on WhatsApp</a>.
+      </p>
     </div>
   </main>
 
@@ -190,12 +253,14 @@
             <li><a href="index.html#services">Services</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="about-us.html">About</a></li>
-            <li><a href="media.html">Media</a></li>
+            <li><a href="media.html" aria-current="page">Media</a></li>
             <li><a href="index.html#reviews">Reviews</a></li>
             <li><a href="index.html#visit">Visit &amp; map</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+          <p class="footer__signin-wrap">
+            <a href="admin.html" class="footer__signin btn-secondary" aria-label="Sign in to blog editor">Sign in</a>
+          </p>
         </nav>
 
         <nav class="footer__col" aria-labelledby="footer-services-heading">
@@ -299,6 +364,5 @@
       });
     })();
   </script>
-  <script type="module" src="js/blog-admin.js"></script>
 </body>
 </html>
