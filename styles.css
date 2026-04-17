@@ -2722,6 +2722,52 @@ body.nav-drawer-open {
   animation-delay: 0.18s;
 }
 
+.media-card:nth-child(7) {
+  animation-delay: 0.22s;
+}
+
+.media-card:nth-child(8) {
+  animation-delay: 0.26s;
+}
+
+.media-spotlight {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  padding: 18px 20px 6px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--glass-border);
+  animation: fadeUp 0.65s var(--motion-ease) 0.2s both;
+}
+
+.media-spotlight__title {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  font-weight: 650;
+  color: var(--text-main);
+  text-align: center;
+}
+
+.media-spotlight__text {
+  margin: 0 auto;
+  max-width: 640px;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.media-spotlight__text a {
+  color: var(--text-main);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.media-spotlight__text a:hover {
+  opacity: 0.88;
+}
+
 .media-card:hover {
   border-color: rgba(255, 255, 255, 0.62);
   background: rgba(255, 255, 255, 0.32);
