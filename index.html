@@ -1195,6 +1195,55 @@
     </div>
   </footer>
 
+  <div
+    class="home-modal"
+    id="homeModal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="homeModalTitle"
+    aria-describedby="homeModalDesc"
+  >
+    <div class="home-modal__backdrop" data-home-modal-close></div>
+    <div class="home-modal__panel">
+      <button
+        type="button"
+        class="home-modal__close"
+        id="homeModalClose"
+        aria-label="Close announcement"
+      >&times;</button>
+      <a
+        href="whitening-treatment.html"
+        class="home-modal__media"
+        aria-label="Read more about our needle-free whitening treatment"
+      >
+        <img
+          src="https://i0.wp.com/looktheluxury.com/wp-content/uploads/2023/09/FE476684-9B5C-4F59-AAA1-ED56C59AA830-768x1024.jpeg?resize=768%2C1024&ssl=1"
+          alt="Brighter, more even skin after a needle-free whitening treatment"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+      <div class="home-modal__body">
+        <p class="home-modal__eyebrow">New · Needle-free</p>
+        <h2 class="home-modal__title" id="homeModalTitle">Brighter, more even skin — without injections</h2>
+        <p class="home-modal__text" id="homeModalDesc">
+          A needle-free whitening treatment that targets the root of pigmentation: <strong>excess melanin and uneven dark spot formation</strong>. Clinically tested to brighten and even out skin tone.
+        </p>
+        <ul class="home-modal__stats">
+          <li><strong>98%</strong> reduced dark spots after 1 session</li>
+          <li><strong>98%</strong> improved luminosity after 1 session</li>
+          <li><strong>56%</strong> fewer dark spots after 2 sessions</li>
+          <li><strong>100%</strong> more even tone after 4 sessions</li>
+        </ul>
+        <div class="home-modal__actions">
+          <a href="whitening-treatment.html" class="btn-primary">Learn more</a>
+          <button type="button" class="btn-secondary" data-home-modal-close>Maybe later</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <a
     class="whatsapp-float"
     href="https://wa.me/6587787867"
@@ -1328,6 +1377,54 @@
       window.addEventListener("resize", () => {
         if (window.matchMedia("(min-width: 981px)").matches && drawer.classList.contains("is-open")) {
           closeDrawer();
+        }
+      });
+    })();
+
+    (function () {
+      const modal = document.getElementById("homeModal");
+      if (!modal) return;
+
+      const STORAGE_KEY = "epb-whitening-modal-dismissed";
+      const SHOW_DELAY_MS = 1200;
+
+      function openModal() {
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("home-modal-open");
+        const closeBtn = modal.querySelector("#homeModalClose");
+        if (closeBtn) {
+          try { closeBtn.focus({ preventScroll: true }); } catch (e) { closeBtn.focus(); }
+        }
+      }
+
+      function closeModal() {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("home-modal-open");
+        try { sessionStorage.setItem(STORAGE_KEY, "1"); } catch (e) {}
+      }
+
+      let dismissed = false;
+      try { dismissed = sessionStorage.getItem(STORAGE_KEY) === "1"; } catch (e) {}
+
+      if (!dismissed) {
+        window.setTimeout(openModal, SHOW_DELAY_MS);
+      }
+
+      modal.querySelectorAll("[data-home-modal-close]").forEach((el) => {
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          closeModal();
+        });
+      });
+
+      const closeBtn = modal.querySelector("#homeModalClose");
+      if (closeBtn) closeBtn.addEventListener("click", closeModal);
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("is-open")) {
+          closeModal();
         }
       });
     })();
