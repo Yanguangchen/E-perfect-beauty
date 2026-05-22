@@ -1,92 +1,42 @@
-# E-Perfect Beauty — project context
+# E-Perfect Beauty — Project Context
 
-## What this is
+## Overview
+A marketing website for **E-Perfect Beauty** (E Perfect Eyebrow Studio), a Singapore-based beauty studio specializing in natural-looking embroidery and facial care. The site features a glassmorphic/neumorphic design, an interactive hero section with auto-rotating service pills, and a blog powered by Firebase.
 
-Marketing site for **E-Perfect Beauty**: glass / neumorphic styling, hero with **five** auto-rotating service pills (brows, facials, waxing, hair coloring, lashes) tied to **`Assets/hero/*.mp4`**, an expanded **core services** grid (incl. makeup, creambath, threading, embroidery, henna brows, lashes, etc.) plus a separate **Other services** section (ear candling, pedicure, manicure, henna art). Each service card links to **`pricing.html`** (section anchor where relevant) via a pill **View pricing** and to **WhatsApp** for booking. **`pricing.html`** holds the full static price list (waxing, hair, facials, makeup, threading, beauty course, other treatments, packages). **Google reviews** carousel, **Elfsight Facebook** + **Maps** under **Visit**, **contact**, and a **Firestore blog** on **`blog.html`** / editor **`admin.html`**. Static HTML/CSS/JS; **Firebase** for the blog modules only.
+## Core Features
+- **Hero Section:** Four auto-rotating service pills (Embroidery, Anti-wrinkle, Face lifting, Facials) linked to `Assets/hero/*.mp4` videos.
+- **Service Categories:** Detailed sections for Embroidery (Brows, Lips, Eyeliner), Anti-wrinkle treatments, Korean Misty Eyebrow, Face Lifting, and various Facial treatments.
+- **Pricing:** A dedicated `pricing.html` page with a TOC and anchor links to specific treatment categories. Pricing is generally "Quote on WhatsApp" to encourage personal consultation.
+- **Trust & Social Proof:** A Google reviews carousel and a "Why Trust Us" section highlighting natural results and personal mapping.
+- **Blog:** A Firestore-backed blog system with a read-only view (`blog.html`) and an editor interface (`admin.html`) secured via Google Sign-In.
+- **Booking:** Primary CTA is WhatsApp (+65 8778 7867) for personal advice and booking.
 
-## Stack
+## Tech Stack
+- **Frontend:** Vanilla HTML5, CSS3, and JavaScript.
+- **Design:** CSS-only glassmorphism, neumorphic cards, and CSS animations.
+- **Backend:** Firebase (Firestore for blog posts, Firebase Auth for the admin editor).
+- **Fonts:** Google Sans (headings and body).
+- **Assets:** MP4 videos for hero backgrounds, JPG/JPEG for service and profile images.
 
-- **HTML5** — `index.html` (home), `pricing.html` (price list + inline drawer JS), `contact.html` (contact + map), `blog.html` (read-only blog), `admin.html` (blog editor + Firebase admin module)
-- **CSS** — `styles.css` (`:root` design tokens, components, `@keyframes`, **`prefers-reduced-motion`** overrides, breakpoints **980px** and **640px**)
-- **JavaScript** — **`index.html`**: hero pills + parallax (inline). **`pricing.html`** / **`contact.html`**: mobile drawer only (inline). **`blog.html`**: drawer (inline) + **`js/blog-read.js`**. **`admin.html`**: drawer (inline) + **`js/blog-admin.js`** (Google sign-in, publish/delete, real-time list).
-- **Fonts** — Google Fonts: Playfair Display (headings), Inter (body)
+## Site Structure
+| Page | Description |
+|------|-------------|
+| `index.html` | Home page with hero, services overview, reviews, meet Evelyn, FAQ, and map. |
+| `pricing.html` | Full treatment menu with anchor links (`#embroidery`, `#anti-wrinkle`, etc.). |
+| `about-us.html` | Profile of lead technician Evelyn and her approach. |
+| `media.html` | Gallery/video content. |
+| `blog.html` | Public blog feed. |
+| `admin.html` | Restricted blog editor (requires allowlisted Google UID). |
+| `contact.html` | Contact form and studio location details. |
+| `whitening-treatment.html` | Dedicated landing page for the needle-free whitening service. |
+| `service-trust.html` | Deep dive into why clients trust the studio's methods. |
 
-## Pages & anchors
-
-| Page | Role |
-|------|------|
-| `index.html` | `#home` hero, `#services` (core cards), `#other-services`, `#reviews`, `#visit` (Elfsight + map). Nav includes **Pricing** → `pricing.html`. |
-| `pricing.html` | Full price list; in-page TOC; section IDs: `#waxing`, `#hair`, `#facials`, `#makeup`, `#threading`, `#beauty-course`, `#other-treatments`, `#packages`; main wrapper `#pricing`. |
-| `contact.html` | Contact copy, panels, map; nav links to `index.html#…`, `blog.html`, etc. (desktop nav has no **Reviews** link; drawer matches contact’s shorter treatment list). |
-| `blog.html` | Firestore blog: **read-only** listing (`js/blog-read.js`). |
-| `admin.html` | Blog editor: **Google Sign-In**, composer, delete own posts (`js/blog-admin.js`). Only the allowlisted editor UID in **`firestore.rules`** (`isBlogEditor()`) can write. |
-
-**Section anchors (home):** `#home`, `#services`, `#other-services`, `#reviews`, `#visit`, plus per-card IDs `#service-brows`, … `#service-makeup`, and other-section cards (`#service-ear-candling`, …).
-
-**Sitemap / crawl:** [`sitemap.xml`](sitemap.xml) — `/`, `pricing.html`, `contact.html`, `blog.html`. [`robots.txt`](robots.txt) — `Sitemap: https://www.eperfectbeauty.com/sitemap.xml`. **`admin.html`** is not listed (editor UI, `noindex`).
-
-## Third-party embeds
-
-- **Elfsight** — `platform.js` + app widget div above the map in `#visit` (class `map-section__elfsight`).
-- **Google Maps** — iframe embed for E-Perfect Beauty Service; footer / reviews may link to the public Maps place URL.
-
-## Firebase (blog)
-
-1. **Authentication** → Sign-in method → enable **Google**. Under **Settings → Authorized domains**, add **`localhost`** and your production hostname.
-2. **Firestore** → create the database if needed → publish **`firestore.rules`** (`firebase deploy --only firestore:rules` using **`firebase.json`**, or paste rules in the console).
-3. **Collection `posts`:** documents use `title`, `content` (plain text; rendered with `textContent` in the app), `authorUid`, `authorName`, `createdAt`, `updatedAt` (timestamps). Queries use **`orderBy("createdAt", "desc")`** — add a **composite/single-field index** if the console error links to one.
-4. **Security model:** the web **API key** in `js/firebase-shared.js` is expected to be public; **Firestore rules** enforce public **read** and **writes only** for a single allowlisted editor **UID** (see `isBlogEditor()` in `firestore.rules`), who must still match `authorUid` on create/update/delete.
-5. Serve **`blog.html`** / **`admin.html`** over **http(s)** so Auth + modules work (see **Running locally**).
-
-## File roles
-
-- **`index.html`** — All home content; hero **`#heroVideo`** in **`#heroMedia`**; WhatsApp links; reviews markup inside **`.reviews-carousel`** (viewport + track).
-- **`styles.css`** — Single stylesheet for all pages (including `.page-contact`, `.page-pricing`, `.page-blog`, `.reviews-carousel`, `.service-card__actions` / `.service-card__pricing-pill` / `.service-card__book`, `.pricing-*`, `.footer__*`, motion tokens `--motion-*`).
-- **`manifest.json`** — PWA manifest (`standalone`, icons, theme).
-- **`js/firebase-shared.js`** — `initializeApp`, `getAuth`, `getFirestore`, `posts` collection + `orderBy("createdAt","desc")` query.
-- **`js/blog-read.js`** — `onSnapshot` + render posts (no delete).
-- **`js/blog-admin.js`** — Google `signInWithPopup`, composer `addDoc`, `onSnapshot` + delete via shared render.
-- **`js/blog-render.js`** — Post card DOM, optional delete controls when `db` + matching `authorUid`.
-- **`firestore.rules`** — Deploy via **`firebase.json`** (`firebase deploy --only firestore:rules`). **Read** public on `posts`. **Write** only if **`isBlogEditor()`** (hard-coded Firebase Auth UID) and `authorUid` on the document matches `request.auth.uid`.
-- **`README.md`** — Quick start, project layout, Firebase checklist, links to deeper notes below.
-
-## Booking & contact
-
-- **WhatsApp:** `https://wa.me/6587787867` (+65 8778 7867).
-- **Navbar:** `.nav-cta` “Book your visit” → `wa.me` (new tab).
-- **Floating:** `.whatsapp-float` — same URL, fixed bottom-right. **Blog editor:** `.footer__signin` in the footer **Explore** column on `index`, `contact`, `blog`, and `pricing` → `admin.html`.
-- **Hero:** Primary in-hero CTA is **Explore All Treatments** → `#services`; booking via nav, float, and service-card **Book on WhatsApp** links. **View pricing** pills on each card → `pricing.html` (with hash to the relevant section when applicable).
+## Key Anchors & IDs
+- **Home:** `#home`, `#services`, `#reviews`, `#faq`, `#visit`.
+- **Pricing:** `#embroidery`, `#anti-wrinkle`, `#korean-misty-eyebrow`, `#face-lifting`, `#facials`.
+- **Services:** `#service-eyebrow-embroidery`, `#service-lip-embroidery`, `#service-eyeliner-embroidery`, etc.
 
 ## Conventions
-
-- **Service pills (5)** — each has `data-title`, `data-hero-text`, `data-card-text`, `data-video` under `Assets/hero/`:
-  - Brow styling → `brows.mp4`
-  - Facial treatments → `facial.mp4`
-  - Body waxing → `waxing.mp4`
-  - Hair coloring → `HairColor.mp4`
-  - Lash extensions → `Lashes.mp4`
-- **IDs (hero script):** `heroText`, `heroCardTitle`, `heroCardText`, `heroMedia`, `heroVideo`, `heroStack`
-- **Floating cards:** `.floating-card` + `.fc-one` / `.fc-two` / `.fc-three`; `waterBob` animation (disabled when `prefers-reduced-motion: reduce`).
-- **Motion:** `:root` defines `--motion-duration`, `--motion-duration-fast`, `--motion-ease`; many components use shared transitions and `fadeUp` / `navReveal` / `serviceCardSheen` where applicable.
-
-## Copy tone
-
-Luxury-adjacent, calm, beauty-specific: refined, radiant, polished, expert, personalised (UK spelling where used). Brand name in nav/footer.
-
-## Web app & SEO
-
-- **`manifest.json`** — PWA-style manifest; icons from `Assets/favicon.jpg`.
-- **Favicon** — `Assets/favicon.jpg` (also `apple-touch-icon`, OG/Twitter image in meta).
-- **Open Graph / Twitter** — Placeholder absolute URLs under **`https://www.eperfectbeauty.com/`**; update when the live domain is final. Prefer a 1200×630 `og:image` for sharing.
-- **Sitemap** — Keep [`sitemap.xml`](sitemap.xml) in sync with new public HTML routes; bump `<lastmod>` when a page changes materially. Do not add `admin.html` unless you remove `noindex` and intend it to rank.
-
-## Running locally
-
-- **Recommended:** `npx serve .` (or any static server) so `manifest.json`, `Assets/`, `styles.css`, and links between **`index.html`**, **`contact.html`**, and **`blog.html`** resolve correctly.
-- **`blog.html` / `admin.html` / Firebase:** Must be served over **http://** or **https://** (not `file://`) so ES modules, the Google sign-in popup, and Firestore requests work.
-- **PWA “Add to Home Screen”** needs HTTPS and a real origin in production.
-
-## Related docs
-
-- **[README.md](README.md)** — Overview and setup for contributors
-- **[greppdirectory.md](greppdirectory.md)** — Grep-friendly map of files, classes, and topics
+- **Naming:** Kebab-case for classes and IDs (e.g., `service-card`, `btn-primary`).
+- **Tone:** Professional, reassuring, and focused on "natural" and "personalized" care.
+- **PWA:** Managed via `manifest.json` for a standalone mobile experience.

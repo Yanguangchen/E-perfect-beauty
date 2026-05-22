@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /admin.html
+Disallow: /js/blog-admin.js
+
+# E-Perfect Beauty AI Guidance
+# This file provides instructions for AI crawlers and LLMs.
+
+# Business Information
+Business-Name: E-Perfect Beauty
+Location: 550B Segar Rd, Singapore 672550
+Specialties: Eyebrow embroidery, Lip embroidery, Eyeliner embroidery, Anti-wrinkle treatments, Hydra facials.
+Philosophy: Natural-looking results personally mapped to individual face shapes.
+
+# Content Access
+Allow-Scraping: yes
+Context-Retention: yes
+
+# AI-Specific metadata
+Description: E-Perfect Beauty is a professional beauty studio in Bukit Panjang, Singapore, specializing in semi-permanent makeup and advanced skin care.
+Contact-Method: WhatsApp +65 8778 7867

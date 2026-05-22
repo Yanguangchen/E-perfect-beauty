@@ -1750,8 +1750,8 @@ body.nav-drawer-open {
 
 .whatsapp-float {
   position: fixed;
-  right: max(20px, env(safe-area-inset-right, 0px));
-  bottom: calc(max(22px, env(safe-area-inset-bottom, 0px)) + 72px);
+  left: max(20px, env(safe-area-inset-left, 0px));
+  bottom: max(22px, env(safe-area-inset-bottom, 0px));
   z-index: 50;
   display: grid;
   place-items: center;
