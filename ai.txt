@@ -1,7 +1,3 @@
-User-agent: *
-Disallow: /admin.html
-Disallow: /js/blog-admin.js
-
 # E-Perfect Beauty AI Guidance
 # This file provides instructions for AI crawlers and LLMs.
 

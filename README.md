@@ -1,11 +1,11 @@
 # E-Perfect Beauty — marketing site
 
-Static marketing site for **E-Perfect Beauty** (Singapore): hero with rotating service videos, services grid (core + other treatments), **full price list** on `pricing.html`, Google reviews carousel, Facebook feed + map, contact page, and a **Firestore-backed blog** (public read on `blog.html`, Google Sign-In editor on `admin.html`).
+Static marketing site for **E-Perfect Beauty** (Singapore): hero with rotating service videos, services grid (core + other treatments), **full price list** on `pricing.html`, Google reviews carousel, Facebook feed + map, contact page, and a **hardcoded blog** on `blog.html`.
 
 ## Tech stack
 
-- **HTML**, **CSS** (`styles.css`), **inline JS** on `index.html` / `contact.html` / `blog.html` / `admin.html`
-- **Firebase** (blog): Auth (Google), Firestore (`posts`), optional Analytics — see [`js/firebase-shared.js`](js/firebase-shared.js), [`js/blog-read.js`](js/blog-read.js), [`js/blog-admin.js`](js/blog-admin.js)
+- **HTML**, **CSS** (`styles.css`), **inline JS** on `index.html` / `contact.html` / `blog.html`
+- **Blog**: posts defined in [`js/blog-posts.js`](js/blog-posts.js), rendered by [`js/blog-read.js`](js/blog-read.js) and [`js/blog-render.js`](js/blog-render.js)
 - **PWA**: [`manifest.json`](manifest.json)
 
 ## Project layout
@@ -15,15 +15,11 @@ Static marketing site for **E-Perfect Beauty** (Singapore): hero with rotating s
 | [`index.html`](index.html) | Home: hero, services (core + other), per-card **View pricing** + WhatsApp, reviews, visit (Elfsight + Maps), footer |
 | [`pricing.html`](pricing.html) | Full treatment price list (waxing, hair, facials, makeup, threading, courses, packages); nav + TOC anchors `#waxing`, `#hair`, … |
 | [`contact.html`](contact.html) | Contact details and map |
-| [`blog.html`](blog.html) | Public blog listing (read-only; loads [`js/blog-read.js`](js/blog-read.js)) |
-| [`admin.html`](admin.html) | Blog editor: Google sign-in, publish/delete (loads [`js/blog-admin.js`](js/blog-admin.js)); `noindex` |
+| [`blog.html`](blog.html) | Public blog listing (loads [`js/blog-read.js`](js/blog-read.js)) |
 | [`styles.css`](styles.css) | Global styles and components |
-| [`js/firebase-shared.js`](js/firebase-shared.js) | Shared Firebase app, auth, Firestore, `posts` query |
-| [`js/blog-read.js`](js/blog-read.js) | Firestore `onSnapshot` → render posts (no auth UI) |
-| [`js/blog-admin.js`](js/blog-admin.js) | Google sign-in, composer, list with delete for own posts |
-| [`js/blog-render.js`](js/blog-render.js) | Shared post card rendering |
-| [`firestore.rules`](firestore.rules) | Firestore security rules (deploy to Firebase) |
-| [`firebase.json`](firebase.json) | Firebase CLI: Firestore rules path |
+| [`js/blog-posts.js`](js/blog-posts.js) | Hardcoded blog post data — edit this file to add or update posts |
+| [`js/blog-read.js`](js/blog-read.js) | Loads posts and renders the blog page |
+| [`js/blog-render.js`](js/blog-render.js) | Post card rendering |
 | [`Assets/`](Assets/) | `favicon.jpg`, hero `.mp4` files, etc. |
 
 ## Run locally
@@ -36,27 +32,9 @@ npx serve .
 
 Then open the URL shown (e.g. `http://localhost:3000`). Serving the folder avoids broken relative paths for `styles.css`, `Assets/`, and `manifest.json`.
 
-**Blog / Firebase:** open [`blog.html`](blog.html) or [`admin.html`](admin.html) through that server (**not** `file://`), or the Google sign-in popup and ES modules will not work reliably.
+## Blog posts
 
-## Firebase setup (blog)
-
-1. In [Firebase Console](https://console.firebase.google.com/), enable **Authentication → Google** and add **authorized domains** (e.g. `localhost`, your production domain).
-2. Create a **Firestore** database if you have not already.
-3. Deploy rules from this repo (requires [Firebase CLI](https://firebase.google.com/docs/cli) and `firebase login`):
-
-   ```bash
-   firebase deploy --only firestore:rules
-   ```
-
-   Rules are defined in [`firestore.rules`](firestore.rules).
-
-4. If Firestore asks for an **index** when loading posts (`orderBy createdAt`), create it using the link in the error.
-
-### Who can publish?
-
-Rules use **`isBlogEditor()`**: only one **Firebase Auth UID** may create, update, or delete posts, and **`authorUid` on each document must match** that signed-in user. To use a different account, change the UID string inside `isBlogEditor()` in [`firestore.rules`](firestore.rules) and redeploy.
-
-The web API key in `js/firebase-shared.js` is normal for Firebase web apps; **access is enforced by rules**, not by hiding the key.
+Edit [`js/blog-posts.js`](js/blog-posts.js) to add, remove, or update posts. Each post needs `id`, `title`, `authorName`, `createdAt` (ISO date string), and `content` (plain text; separate paragraphs with blank lines). Posts are shown in array order (newest first).
 
 ## Documentation
 
@@ -65,9 +43,9 @@ The web API key in `js/firebase-shared.js` is normal for Firebase web apps; **ac
 
 ## Deploying the static site
 
-Host `index.html`, `pricing.html`, `contact.html`, `blog.html`, `admin.html`, `styles.css`, `js/`, `Assets/`, `sitemap.xml`, `robots.txt`, and `manifest.json` on any static host (Netlify, Vercel, GitHub Pages, S3, etc.). Ensure **Firebase authorized domains** include your production hostname.
+Host `index.html`, `pricing.html`, `contact.html`, `blog.html`, `styles.css`, `js/`, `Assets/`, `sitemap.xml`, `robots.txt`, and `manifest.json` on any static host (Netlify, Vercel, GitHub Pages, S3, etc.).
 
-**SEO:** [`sitemap.xml`](sitemap.xml) lists the public indexable URLs (home, pricing, contact, blog). [`robots.txt`](robots.txt) points crawlers to the sitemap. `admin.html` is `noindex` and is not listed in the sitemap.
+**SEO:** [`sitemap.xml`](sitemap.xml) lists the public indexable URLs (home, pricing, contact, blog). [`robots.txt`](robots.txt) points crawlers to the sitemap.
 
 ---
 

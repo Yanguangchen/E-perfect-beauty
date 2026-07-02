@@ -1,35 +1,40 @@
-import { onSnapshot } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";
-import { postsQuery } from "./firebase-shared.js";
+import { blogPosts } from "./blog-posts.js";
 import { renderPostsInto } from "./blog-render.js";
 
-const blogStatus = document.getElementById("blogStatus");
-const blogPosts = document.getElementById("blogPosts");
+const blogPostsEl = document.getElementById("blogPosts");
+const blogFilterEl = document.getElementById("blogFilter");
 
-function setStatus(message, isError = false) {
-  if (!blogStatus) return;
-  blogStatus.textContent = message || "";
-  blogStatus.classList.toggle("blog-status--error", Boolean(isError && message));
+function filterPosts(category) {
+  if (category === "all") {
+    return blogPosts;
+  }
+  return blogPosts.filter(post => 
+    post.tags && post.tags.some(tag => tag.toLowerCase() === category.toLowerCase())
+  );
 }
 
-setStatus("Loading posts…");
+function initBlog() {
+  // Initial render
+  renderPostsInto(blogPostsEl, blogPosts);
 
-onSnapshot(
-  postsQuery,
-  (snapshot) => {
-    setStatus("");
-    renderPostsInto(blogPosts, snapshot, {
-      currentUid: null,
-      db: null,
-      setStatus,
+  // Filter logic
+  if (blogFilterEl) {
+    const filterBtns = blogFilterEl.querySelectorAll(".blog-filter__btn");
+    
+    filterBtns.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        // Remove active class from all
+        filterBtns.forEach(b => b.classList.remove("active"));
+        // Add active class to clicked
+        e.target.classList.add("active");
+        
+        // Filter and render
+        const category = e.target.getAttribute("data-filter");
+        const filteredPosts = filterPosts(category);
+        renderPostsInto(blogPostsEl, filteredPosts);
+      });
     });
-  },
-  (err) => {
-    console.error(err);
-    setStatus(
-      err.code === "permission-denied"
-        ? "Could not load posts (check Firestore rules)."
-        : err.message || "Could not load posts.",
-      true
-    );
   }
-);
+}
+
+initBlog();

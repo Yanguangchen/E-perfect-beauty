@@ -149,16 +149,23 @@
   <main class="blog-main" id="main">
     <div class="container blog-main__inner">
       <header class="blog-page-header">
-        <h1 class="blog-page-header__title">Blog</h1>
+        <h1 class="blog-page-header__title">Beauty Journal</h1>
         <p class="blog-page-header__lede">
-          Studio notes, care tips, and updates from E-Perfect Beauty.
+          Studio notes, beauty trends, and expert care tips from Bukit Panjang's trusted beauty salon.
         </p>
       </header>
 
-      <p class="blog-status" id="blogStatus" role="status" aria-live="polite"></p>
-
       <section class="blog-posts-section" aria-labelledby="blog-posts-heading">
-        <h2 class="blog-posts-section__title" id="blog-posts-heading">Recent posts</h2>
+        <h2 class="blog-posts-section__title" id="blog-posts-heading" style="display:none;">Recent posts</h2>
+        
+        <div class="blog-filter" id="blogFilter">
+          <button class="blog-filter__btn active" data-filter="all">All</button>
+          <button class="blog-filter__btn" data-filter="trends">Trends</button>
+          <button class="blog-filter__btn" data-filter="embroidery">Embroidery</button>
+          <button class="blog-filter__btn" data-filter="eyebrows">Eyebrows</button>
+          <button class="blog-filter__btn" data-filter="facials">Facials</button>
+        </div>
+
         <div class="blog-posts" id="blogPosts"></div>
       </section>
     </div>
@@ -186,9 +193,6 @@
             <li><a href="index.html#visit">Visit &amp; map</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <p class="footer__signin-wrap">
-            <a href="admin.html" class="footer__signin btn-secondary" aria-label="Sign in to blog editor">Sign in</a>
-          </p>
         </nav>
 
         <nav class="footer__col" aria-labelledby="footer-services-heading">

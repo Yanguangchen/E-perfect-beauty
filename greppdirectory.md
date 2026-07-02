@@ -11,8 +11,8 @@ Quick reference for searching the E-Perfect Beauty codebase.
 | `pricing.html` | Treatment menu with anchors for external linking. |
 | `about-us.html` | Evelyn's profile and studio philosophy. |
 | `blog.html` | Blog feed (JS: `js/blog-read.js`). |
-| `admin.html` | Blog editor (JS: `js/blog-admin.js`). |
-| `js/firebase-shared.js` | Firebase initialization and shared database/auth references. |
+| `js/blog-posts.js` | Hardcoded blog post data. |
+| `js/blog-render.js` | Post card rendering. |
 
 ## Key CSS Selectors
 
@@ -23,7 +23,7 @@ Quick reference for searching the E-Perfect Beauty codebase.
 | **Buttons** | `.btn-primary`, `.btn-secondary`, `.nav-cta` |
 | **Services** | `.services`, `.service-group`, `.service-grid`, `.service-card` |
 | **Reviews** | `.reviews-section`, `.reviews-carousel`, `.review-card` |
-| **Footer** | `.footer`, `.footer__brand`, `.footer__col`, `.footer__signin` |
+| **Footer** | `.footer`, `.footer__brand`, `.footer__col` |
 | **Glass/Effects**| `.main-card--hero-glass`, `.blob`, `.grid-glow` |
 
 ## JavaScript Logic
@@ -32,8 +32,7 @@ Quick reference for searching the E-Perfect Beauty codebase.
 |---------|----------|-------------|
 | **Hero Rotation** | `index.html` | `activateServicePill`, `advanceServicePill`, `AUTO_ROTATE_MS` |
 | **Mobile Menu** | `index.html`, etc. | `openDrawer`, `closeDrawer`, `navBurger` |
-| **Blog Listing** | `js/blog-read.js` | `onSnapshot`, `renderPostsInto` |
-| **Blog Auth** | `js/blog-admin.js` | `signInWithPopup`, `GoogleAuthProvider` |
+| **Blog Listing** | `js/blog-read.js` | `blogPosts`, `renderPostsInto` |
 | **PWA Modal** | `index.html` | `openModal`, `closeModal`, `EPB-whitening-modal-dismissed` |
 
 ## Useful Grep One-Liners
@@ -48,8 +47,8 @@ rg "--motion-|--radius-" styles.css
 # Find all service card IDs
 rg "id=\"service-" index.html
 
-# Check Firebase configuration
-rg "apiKey|authDomain" js/firebase-shared.js
+# List blog posts
+rg "title:|id:" js/blog-posts.js
 
 # Find all anchor links on the pricing page
 rg "id=\"[a-z-]+\"" pricing.html
