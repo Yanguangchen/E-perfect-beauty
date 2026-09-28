@@ -64,6 +64,38 @@
       <image:title>Hydration facial routine</image:title>
     </image:image>
   </url>
+  <!-- In-depth guides have their own HTML URLs, so they are listed.
+       Short journal notes only exist as hash fragments on blog.html and are not separate locs. -->
+  <url>
+    <loc>https://www.eperfectbeauty.com/eyebrow-embroidery-first-visit.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/blog/misty_eyebrows.jpg</image:loc>
+      <image:title>First eyebrow embroidery visit</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.eperfectbeauty.com/lip-embroidery-guide.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/samples/lips/lipembroidery2.jpeg</image:loc>
+      <image:title>Lip embroidery for pale or uneven lips</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.eperfectbeauty.com/hydra-facial-or-whitening.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/blog/hydration_facial.jpg</image:loc>
+      <image:title>Hydra facial or needle-free whitening</image:title>
+    </image:image>
+  </url>
   <url>
     <loc>https://www.eperfectbeauty.com/service-trust.html</loc>
     <lastmod>2026-09-28</lastmod>

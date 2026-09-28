@@ -29,6 +29,9 @@ Pricing: https://www.eperfectbeauty.com/pricing.html
 About: https://www.eperfectbeauty.com/about-us.html
 Contact: https://www.eperfectbeauty.com/contact.html
 Blog: https://www.eperfectbeauty.com/blog.html
+Guide-First-Brow-Visit: https://www.eperfectbeauty.com/eyebrow-embroidery-first-visit.html
+Guide-Lip-Embroidery: https://www.eperfectbeauty.com/lip-embroidery-guide.html
+Guide-Hydra-Or-Whitening: https://www.eperfectbeauty.com/hydra-facial-or-whitening.html
 Media: https://www.eperfectbeauty.com/media.html
 Trust: https://www.eperfectbeauty.com/service-trust.html
 Whitening: https://www.eperfectbeauty.com/whitening-treatment.html

@@ -33,19 +33,34 @@ const RELATED_LINKS = {
     ["contact.html", "Book a visit"],
   ],
   "aftercare-embroidery": [
+    ["eyebrow-embroidery-first-visit.html", "First brow visit"],
     ["pricing.html#embroidery", "Embroidery pricing"],
     ["service-trust.html#embroidery", "How embroidery visits work"],
-    ["contact.html", "Message Evelyn"],
   ],
   "korean-misty-brows": [
+    ["eyebrow-embroidery-first-visit.html", "First brow visit"],
     ["pricing.html#korean-misty-eyebrow", "Korean misty brow pricing"],
     ["service-trust.html#korean-misty-eyebrow", "Why clients trust the mapping"],
-    ["contact.html", "Book a consult"],
   ],
   "hydration-facial-routine": [
     ["pricing.html#facials", "Facial pricing"],
-    ["whitening-treatment.html", "Needle-free whitening"],
+    ["hydra-facial-or-whitening.html", "Hydra facial or whitening"],
     ["contact.html", "Book a facial"],
+  ],
+  "eyebrow-embroidery-first-visit": [
+    ["blog.html#aftercare-embroidery", "7–10 day aftercare note"],
+    ["pricing.html#embroidery", "Embroidery pricing"],
+    ["lip-embroidery-guide.html", "Lip embroidery guide"],
+  ],
+  "lip-embroidery-guide": [
+    ["media.html", "Lip embroidery photos"],
+    ["pricing.html#embroidery", "Embroidery pricing"],
+    ["eyebrow-embroidery-first-visit.html", "First brow visit"],
+  ],
+  "hydra-facial-or-whitening": [
+    ["whitening-treatment.html", "Needle-free whitening"],
+    ["pricing.html#facials", "Facial pricing"],
+    ["blog.html#hydration-facial-routine", "Daily hydration habits"],
   ],
 };
 
@@ -75,8 +90,11 @@ export function createPostArticle(post, isFeatured = false) {
 
   // Image section
   if (post.image) {
-    const imgWrap = document.createElement("div");
+    const imgWrap = document.createElement(post.href ? "a" : "div");
     imgWrap.className = "blog-post__image-wrap";
+    if (post.href) {
+      imgWrap.href = post.href;
+    }
     const img = document.createElement("img");
     img.className = "blog-post__image";
     img.src = post.image;
@@ -110,12 +128,28 @@ export function createPostArticle(post, isFeatured = false) {
   // Title
   const title = document.createElement("h2");
   title.className = "blog-post__title";
-  title.textContent = post.title || "Untitled";
+  if (post.href) {
+    const titleLink = document.createElement("a");
+    titleLink.href = post.href;
+    titleLink.textContent = post.title || "Untitled";
+    title.appendChild(titleLink);
+  } else {
+    title.textContent = post.title || "Untitled";
+  }
   contentWrap.appendChild(title);
 
   // Body
   contentWrap.appendChild(renderPostBody(post.content));
   contentWrap.appendChild(relatedLinksElement(post));
+  if (post.href) {
+    const more = document.createElement("p");
+    more.className = "blog-post__related";
+    const moreLink = document.createElement("a");
+    moreLink.href = post.href;
+    moreLink.textContent = "Read the full guide";
+    more.appendChild(moreLink);
+    contentWrap.appendChild(more);
+  }
 
   // Meta (Footer of card)
   const meta = document.createElement("div");
