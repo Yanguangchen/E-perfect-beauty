@@ -25,9 +25,49 @@ export function renderPostBody(text) {
   return wrap;
 }
 
+const RELATED_LINKS = {
+  "top-beauty-trends-bukit-panjang": [
+    ["index.html#services", "All treatments"],
+    ["pricing.html#korean-misty-eyebrow", "Korean misty brows"],
+    ["about-us.html", "Meet Evelyn"],
+    ["contact.html", "Book a visit"],
+  ],
+  "aftercare-embroidery": [
+    ["pricing.html#embroidery", "Embroidery pricing"],
+    ["service-trust.html#embroidery", "How embroidery visits work"],
+    ["contact.html", "Message Evelyn"],
+  ],
+  "korean-misty-brows": [
+    ["pricing.html#korean-misty-eyebrow", "Korean misty brow pricing"],
+    ["service-trust.html#korean-misty-eyebrow", "Why clients trust the mapping"],
+    ["contact.html", "Book a consult"],
+  ],
+  "hydration-facial-routine": [
+    ["pricing.html#facials", "Facial pricing"],
+    ["whitening-treatment.html", "Needle-free whitening"],
+    ["contact.html", "Book a facial"],
+  ],
+};
+
+function relatedLinksElement(post) {
+  const links = RELATED_LINKS[post.id] || [["contact.html", "Book a visit"]];
+  const paragraph = document.createElement("p");
+  paragraph.className = "blog-post__related";
+  paragraph.append("Related: ");
+  links.forEach(([href, label], index) => {
+    if (index > 0) paragraph.append(" · ");
+    const anchor = document.createElement("a");
+    anchor.href = href;
+    anchor.textContent = label;
+    paragraph.appendChild(anchor);
+  });
+  return paragraph;
+}
+
 export function createPostArticle(post, isFeatured = false) {
   const article = document.createElement("article");
   article.className = "blog-post";
+  if (post.id) article.id = post.id;
   
   if (isFeatured) {
     article.classList.add("blog-post--featured");
@@ -41,7 +81,11 @@ export function createPostArticle(post, isFeatured = false) {
     img.className = "blog-post__image";
     img.src = post.image;
     img.alt = post.title;
-    img.loading = "lazy";
+    img.width = 1100;
+    img.height = 614;
+    img.decoding = "async";
+    img.loading = isFeatured ? "eager" : "lazy";
+    if (isFeatured) img.setAttribute("fetchpriority", "high");
     imgWrap.appendChild(img);
     article.appendChild(imgWrap);
   }
@@ -71,6 +115,7 @@ export function createPostArticle(post, isFeatured = false) {
 
   // Body
   contentWrap.appendChild(renderPostBody(post.content));
+  contentWrap.appendChild(relatedLinksElement(post));
 
   // Meta (Footer of card)
   const meta = document.createElement("div");

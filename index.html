@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-SG">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -20,6 +20,9 @@
   <meta name="author" content="E-Perfect Beauty" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.eperfectbeauty.com/" />
+  <link rel="alternate" hreflang="en-SG" href="https://www.eperfectbeauty.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.eperfectbeauty.com/" />
+  <link rel="alternate" type="text/plain" href="https://www.eperfectbeauty.com/llms.txt" title="llms.txt" />
 
   <meta name="geo.region" content="SG" />
   <meta name="geo.placename" content="Singapore" />
@@ -33,13 +36,15 @@
   <meta property="og:description" content="Expert embroidery, anti-wrinkle care, and Hydra facials at E-Perfect Beauty (Segar Rd). Natural results personally mapped by Evelyn. Book via WhatsApp." />
   <meta property="og:url" content="https://www.eperfectbeauty.com/" />
   <meta property="og:image" content="https://www.eperfectbeauty.com/Assets/evelyn.jpg" />
+  <meta property="og:image:width" content="953" />
+  <meta property="og:image:height" content="960" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:alt" content="E-Perfect Beauty — E Perfect Eyebrow Studio Singapore" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="E-Perfect Beauty | E Perfect Eyebrow Studio Singapore" />
   <meta name="twitter:description" content="Embroidery, anti-wrinkle care, facials &amp; more at our Segar Rd studio. WhatsApp +65 8778 7867." />
-  <meta name="twitter:image" content="https://www.eperfectbeauty.com/Assets/favicon.jpg" />
+  <meta name="twitter:image" content="https://www.eperfectbeauty.com/Assets/evelyn.jpg" />
   <meta name="twitter:image:alt" content="E-Perfect Beauty — E Perfect Eyebrow Studio Singapore" />
 
   <link rel="manifest" href="manifest.json" />
@@ -49,8 +54,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="Assets/hero/posters/eyebrow.jpg" fetchpriority="high" />
 
   <script type="application/ld+json">
   {
@@ -61,37 +68,82 @@
         "@id": "https://www.eperfectbeauty.com/#website",
         "url": "https://www.eperfectbeauty.com/",
         "name": "E-Perfect Beauty",
-        "description": "E-Perfect Beauty (E Perfect Eyebrow Studio Singapore). Embroidery, anti-wrinkle treatments, Korean misty eyebrow, face lifting, facial spa and Hydra treatments. 550B Segar Rd. Book on WhatsApp.",
+        "alternateName": "E Perfect Eyebrow Studio Singapore",
+        "description": "Natural-looking eyebrow, lip and eyeliner embroidery, anti-wrinkle care, face lifting and Hydra facials in Singapore.",
         "inLanguage": "en-SG",
-        "publisher": { "@id": "https://www.eperfectbeauty.com/#business" }
+        "publisher": {
+          "@id": "https://www.eperfectbeauty.com/#business"
+        }
       },
       {
         "@type": "WebPage",
         "@id": "https://www.eperfectbeauty.com/#webpage",
         "url": "https://www.eperfectbeauty.com/",
-        "name": "E-Perfect Beauty | Natural-looking embroidery & facials in Singapore",
-        "description": "Natural-looking eyebrow, lip and eyeliner embroidery, anti-wrinkle care, face lifting and hydra facials in Singapore, personally advised by Evelyn.",
+        "name": "E-Perfect Beauty | Natural Embroidery & Facials in Bukit Panjang, SG",
+        "description": "Expert natural eyebrow, lip and eyeliner embroidery in Bukit Panjang. Personally mapped results by Evelyn at E-Perfect Beauty.",
         "inLanguage": "en-SG",
-        "isPartOf": { "@id": "https://www.eperfectbeauty.com/#website" },
-        "about": { "@id": "https://www.eperfectbeauty.com/#business" },
-        "primaryImageOfPage": { "@id": "https://www.eperfectbeauty.com/#primaryimage" },
-        "breadcrumb": { "@id": "https://www.eperfectbeauty.com/#breadcrumb" }
+        "dateModified": "2026-09-28",
+        "isPartOf": {
+          "@id": "https://www.eperfectbeauty.com/#website"
+        },
+        "about": {
+          "@id": "https://www.eperfectbeauty.com/#business"
+        },
+        "publisher": {
+          "@id": "https://www.eperfectbeauty.com/#business"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://www.eperfectbeauty.com/#primaryimage"
+        },
+        "significantLink": [
+          "https://www.eperfectbeauty.com/pricing.html",
+          "https://www.eperfectbeauty.com/about-us.html",
+          "https://www.eperfectbeauty.com/contact.html",
+          "https://www.eperfectbeauty.com/blog.html",
+          "https://www.eperfectbeauty.com/whitening-treatment.html",
+          "https://www.eperfectbeauty.com/service-trust.html"
+        ]
       },
       {
-        "@type": ["BeautySalon", "LocalBusiness"],
+        "@type": "ImageObject",
+        "@id": "https://www.eperfectbeauty.com/#primaryimage",
+        "url": "https://www.eperfectbeauty.com/Assets/evelyn.jpg",
+        "width": 953,
+        "height": 960,
+        "caption": "Evelyn, lead beauty technician at E-Perfect Beauty"
+      },
+      {
+        "@type": [
+          "BeautySalon",
+          "LocalBusiness"
+        ],
         "@id": "https://www.eperfectbeauty.com/#business",
         "name": "E-Perfect Beauty",
-        "alternateName": ["E Perfect Eyebrow Studio Sg", "E Perfect Eyebrow Studio Singapore"],
+        "alternateName": [
+          "E Perfect Eyebrow Studio",
+          "E Perfect Eyebrow Studio Singapore",
+          "E Perfect Eyebrow Studio Sg"
+        ],
+        "description": "Boutique beauty studio in Bukit Panjang, Singapore for natural-looking eyebrow, lip and eyeliner embroidery, needle-free anti-wrinkle care, face lifting and Hydra facials. Led by Evelyn. By appointment at 550B Segar Rd.",
         "url": "https://www.eperfectbeauty.com/",
-        "image": "https://www.eperfectbeauty.com/Assets/favicon.jpg",
-        "logo": "https://www.eperfectbeauty.com/Assets/favicon.jpg",
+        "image": [
+          "https://www.eperfectbeauty.com/Assets/evelyn.jpg",
+          "https://www.eperfectbeauty.com/Assets/favicon.jpg"
+        ],
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.eperfectbeauty.com/Assets/favicon.jpg",
+          "width": 1000,
+          "height": 992
+        },
         "telephone": "+6587787867",
+        "currenciesAccepted": "SGD",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "550B Segar Rd",
           "addressLocality": "Singapore",
-          "postalCode": "672550",
           "addressRegion": "Singapore",
+          "postalCode": "672550",
           "addressCountry": "SG"
         },
         "geo": {
@@ -99,74 +151,336 @@
           "latitude": 1.3899567,
           "longitude": 103.7647189
         },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "note": "By Appointment Only",
-            "opens": "10:00",
-            "closes": "20:00"
-          }
-        ],
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=E%20Perfect%20Eyebrow%20Studio%20Singapore",
         "areaServed": [
-          { "@type": "City", "name": "Singapore" },
-          { "@type": "AdministrativeArea", "name": "Bukit Panjang" },
-          { "@type": "AdministrativeArea", "name": "Choa Chu Kang" }
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": "12"
-        },
-        "review": [
           {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Evonne Yeo" },
-            "datePublished": "2025-01-19",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "I had my eyebrow embroidery done today by Everlyn at E Perfect Eyebrow Studio, and I couldn\u2019t be happier with the results."
+            "@type": "City",
+            "name": "Singapore"
           },
           {
-            "@type": "Review",
-            "author": { "@type": "Person", "name": "Tan WENDY" },
-            "datePublished": "2024-10-20",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-            "reviewBody": "\u7b2c\u4e00\u6b21\u505a\u7709\u6bdb Everlyn\u5f88\u7ec6\u5fc3\u7684\u5e2e\u6211\u8c03\u6574\u9ad8\u4f4e\u7709 \u8fd8\u6559\u6211\u5982\u4f55\u4fee\u7709\u6bdb \u91cd\u70b9\u662f\u8fc7\u7a0b\u4e00\u70b9\u90fd\u4e0d\u75db \u8fd8\u5dee\u70b9\u7761\u89c9\u4e86\uff0c\u670d\u52a1\u5f88\u597d \u624b\u827a\u5f88\u8d5e \u7709\u6bdb\u505a\u51fa\u6765\u4e5f\u4e0d\u4f1a\u9ed1\u9ed1 \u5c31\u662f\u5f88\u81ea\u7136\u7684\u6548\u679c \u4e0b\u6b21\u518d\u5e26\u5988\u5988\u8fc7\u6765\u505a\u7709\u6bdb\ud83d\udc4d\ud83d\udc4d"
+            "@type": "AdministrativeArea",
+            "name": "Bukit Panjang"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Choa Chu Kang"
           }
         ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+6587787867",
+          "contactType": "reservations",
+          "url": "https://wa.me/6587787867",
+          "areaServed": "SG",
+          "availableLanguage": "English"
+        },
+        "employee": {
+          "@id": "https://www.eperfectbeauty.com/about-us.html#evelyn"
+        },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Beauty Services",
+          "name": "Beauty treatments",
           "itemListElement": [
             {
-              "@type": "OfferCatalog",
-              "name": "Embroidery",
-              "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Eyebrow embroidery" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lip embroidery" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Eyeliner embroidery" } }
-              ]
+              "@type": "Offer",
+              "name": "Eyebrow embroidery",
+              "url": "https://www.eperfectbeauty.com/pricing.html#embroidery",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Eyebrow embroidery",
+                "serviceType": "Semi-permanent eyebrow embroidery",
+                "url": "https://www.eperfectbeauty.com/pricing.html#embroidery",
+                "description": "Brows mapped to bone structure, existing hair, and preferred style before pigment is applied. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
             },
             {
-              "@type": "OfferCatalog",
-              "name": "Facials",
-              "itemListElement": [
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hydra Aqua Peel Facials" } },
-                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Needle-Free Whitening Treatment" } }
-              ]
+              "@type": "Offer",
+              "name": "Lip embroidery",
+              "url": "https://www.eperfectbeauty.com/pricing.html#embroidery",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Lip embroidery",
+                "serviceType": "Semi-permanent lip embroidery",
+                "url": "https://www.eperfectbeauty.com/pricing.html#embroidery",
+                "description": "Soft natural tint for pale or uneven lips, planned around the client's own lip shape. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Eyeliner embroidery",
+              "url": "https://www.eperfectbeauty.com/pricing.html#embroidery",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Eyeliner embroidery",
+                "serviceType": "Semi-permanent eyeliner embroidery",
+                "url": "https://www.eperfectbeauty.com/pricing.html#embroidery",
+                "description": "Subtle lash-line definition tailored to eye shape. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Korean Misty Eyebrow",
+              "url": "https://www.eperfectbeauty.com/pricing.html#korean-misty-eyebrow",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Korean Misty Eyebrow",
+                "serviceType": "Korean misty eyebrow embroidery",
+                "url": "https://www.eperfectbeauty.com/pricing.html#korean-misty-eyebrow",
+                "description": "Powder-soft layered strokes rather than a solid block brow. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Needle-Free Stem Cell Treatment",
+              "url": "https://www.eperfectbeauty.com/pricing.html#anti-wrinkle",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Needle-Free Stem Cell Treatment",
+                "serviceType": "Needle-free facial renewal",
+                "url": "https://www.eperfectbeauty.com/pricing.html#anti-wrinkle",
+                "description": "Renewal-focused care without injections or downtime. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Anti-Laughline Treatment",
+              "url": "https://www.eperfectbeauty.com/pricing.html#anti-wrinkle",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Anti-Laughline Treatment",
+                "serviceType": "Expression-line care",
+                "url": "https://www.eperfectbeauty.com/pricing.html#anti-wrinkle",
+                "description": "Targeted care for laugh lines that aims to keep expression natural. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Needleless Forehead Wrinkle Removal",
+              "url": "https://www.eperfectbeauty.com/pricing.html#anti-wrinkle",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Needleless Forehead Wrinkle Removal",
+                "serviceType": "Forehead line care",
+                "url": "https://www.eperfectbeauty.com/pricing.html#anti-wrinkle",
+                "description": "Needleless care for forehead lines. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Face lifting",
+              "url": "https://www.eperfectbeauty.com/pricing.html#face-lifting",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Face lifting",
+                "serviceType": "Face lifting",
+                "url": "https://www.eperfectbeauty.com/pricing.html#face-lifting",
+                "description": "Contour-focused care for a rested, firmer-looking appearance. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Facial Spa",
+              "url": "https://www.eperfectbeauty.com/pricing.html#facials",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Facial Spa",
+                "serviceType": "Facial spa",
+                "url": "https://www.eperfectbeauty.com/pricing.html#facials",
+                "description": "Spa facial customised to the skin that day. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Hydra Aqua Peel Facials",
+              "url": "https://www.eperfectbeauty.com/pricing.html#facials",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Hydra Aqua Peel Facials",
+                "serviceType": "Hydra facial",
+                "url": "https://www.eperfectbeauty.com/pricing.html#facials",
+                "description": "Deep cleansing and gentle exfoliation for clogged pores and uneven texture. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Hydra glow booster treatment",
+              "url": "https://www.eperfectbeauty.com/pricing.html#facials",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Hydra glow booster treatment",
+                "serviceType": "Hydrating facial",
+                "url": "https://www.eperfectbeauty.com/pricing.html#facials",
+                "description": "Intensive hydration for dull or dehydrated skin. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Needle-Free Whitening Treatment",
+              "url": "https://www.eperfectbeauty.com/whitening-treatment.html",
+              "description": "Price confirmed on WhatsApp after a no-obligation consultation.",
+              "priceCurrency": "SGD",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Needle-Free Whitening Treatment",
+                "serviceType": "Needle-free skin brightening",
+                "url": "https://www.eperfectbeauty.com/whitening-treatment.html",
+                "description": "Targets dark spots, melasma, sun spots, and acne marks without injections. Price confirmed on WhatsApp.",
+                "provider": {
+                  "@id": "https://www.eperfectbeauty.com/#business"
+                },
+                "areaServed": {
+                  "@type": "Country",
+                  "name": "Singapore"
+                }
+              }
             }
           ]
+        },
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "name": "Ask or book on WhatsApp",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://wa.me/6587787867",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform"
+            ]
+          }
         }
       },
       {
+        "@type": "Person",
+        "@id": "https://www.eperfectbeauty.com/about-us.html#evelyn",
+        "name": "Evelyn",
+        "jobTitle": "Lead beauty technician",
+        "image": "https://www.eperfectbeauty.com/Assets/evelyn.jpg",
+        "url": "https://www.eperfectbeauty.com/about-us.html",
+        "worksFor": {
+          "@id": "https://www.eperfectbeauty.com/#business"
+        },
+        "knowsAbout": [
+          "Eyebrow embroidery",
+          "Lip embroidery",
+          "Eyeliner embroidery",
+          "Korean misty eyebrows",
+          "Needle-free anti-wrinkle treatment",
+          "Hydra facials"
+        ]
+      },
+      {
         "@type": "FAQPage",
+        "@id": "https://www.eperfectbeauty.com/#faq",
+        "url": "https://www.eperfectbeauty.com/#faq",
+        "isPartOf": {
+          "@id": "https://www.eperfectbeauty.com/#webpage"
+        },
         "mainEntity": [
           {
             "@type": "Question",
             "name": "Will my brows look very dark after embroidery?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Brows usually appear darker for the first few days, then soften noticeably as they heal."
+              "text": "Brows usually appear darker for the first few days, then soften noticeably as they heal. Evelyn will explain what to expect for your skin type and chosen style before treatment begins, so the colour you settle into is the one you actually want."
             }
           },
           {
@@ -174,7 +488,39 @@
             "name": "Is eyebrow embroidery painful?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Most clients describe it as much more manageable than expected \u2014 many even doze off during the session."
+              "text": "Most clients describe it as much more manageable than expected — many even doze off during the session. Evelyn works gently, talks you through each step, and pauses whenever you need."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you fix uneven brows or previous embroidery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often yes. Brow mapping is used to improve visual balance, and we are happy to assess previous embroidery on WhatsApp first. The honest recommendation depends on your natural shape and how earlier work has healed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I know which treatment suits me?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Send us a message on WhatsApp with your concern (and a clear photo if relevant). Evelyn will recommend the most suitable option and an estimated price — with no obligation to book."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does eyebrow embroidery last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Results are semi-permanent and gradually soften over time. Lifespan varies with skin type, sun exposure and aftercare, so we walk you through realistic expectations and any recommended touch-up timing during consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — treatments are by appointment so the studio can give every client unhurried, focused attention. Message us with your preferred date and we will confirm available slots."
             }
           }
         ]
@@ -185,7 +531,6 @@
 </head>
 <body>
   <!-- Elfsight Website Translator | Kuts&Kurl -->
-  <script src="https://elfsightcdn.com/platform.js" async></script>
   <div class="site-elfsight" role="region" aria-label="Translate this website">
     <div class="elfsight-app-c6a27cf6-6681-4c2f-9ddf-12adebc1857e" data-elfsight-app-lazy></div>
   </div>
@@ -301,7 +646,7 @@
             data-title="Embroidery, mapped to your face"
             data-hero-text="Worried your brows will look too dark, harsh or unnatural? Evelyn maps each embroidery to your bone structure, skin tone and preferred style before any pigment is applied — so brows, lips and eyeliner heal soft and balanced, not blocky."
             data-card-text="Brows, lips and eyeliner are designed to look soft and natural — never blocky or too dark. We plan shape, colour and healing with you before treatment begins."
-            data-video="Assets/hero/eyebrow.mp4">
+            data-video="Assets/hero/eyebrow.mp4" data-poster="Assets/hero/posters/eyebrow.jpg">
             Embroidery
           </button>
 
@@ -309,7 +654,7 @@
             data-title="Anti-wrinkle, gently done"
             data-hero-text="Needle-free anti-wrinkle, laugh-line and forehead care for clients who want softer expression lines without looking frozen or overdone — paced gently, with realistic expectations explained upfront."
             data-card-text="Gentle, needle-free options for laugh lines, forehead and expression creases. We focus on softer skin and a rested look — never a stiff or over-treated appearance."
-            data-video="Assets/hero/anti-wrinkle.mp4">
+            data-video="Assets/hero/anti-wrinkle.mp4" data-poster="Assets/hero/posters/anti-wrinkle.jpg">
             Anti-wrinkle
           </button>
 
@@ -317,7 +662,7 @@
             data-title="Face lifting for a rested look"
             data-hero-text="Face lifting treatments for clients who feel their skin looks tired or has lost firmness — focused on a fresher, more lifted appearance that still looks like you in photos and in the mirror."
             data-card-text="For skin that feels tired or less firm, lifting-focused care supports refreshed contours and a rested look — subtle, never theatrical."
-            data-video="Assets/hero/face-lifting.mp4">
+            data-video="Assets/hero/face-lifting.mp4" data-poster="Assets/hero/posters/face-lifting.jpg">
             Face lifting
           </button>
 
@@ -325,7 +670,7 @@
             data-title="Hydra facials &amp; deep cleanse"
             data-hero-text="Hydra Aqua Peel, glow booster and facial spa sessions for dull, congested or dehydrated skin — deep cleansing and hydration without aggressive over-treatment, ideal before events or as a regular reset."
             data-card-text="For dull, congested or tired skin: deep cleansing, gentle exfoliation and lasting hydration. Comfortable, unhurried sessions — no rushed extractions, no harsh aftermath."
-            data-video="Assets/hero/facials.mp4">
+            data-video="Assets/hero/facials.mp4" data-poster="Assets/hero/posters/facials.jpg">
             Facials
           </button>
         </div>
@@ -360,15 +705,25 @@
 
           <div class="main-card main-card--hero-glass">
             <div class="card-image card-image--video" id="heroMedia">
+              <img
+                id="heroPoster"
+                class="hero-poster"
+                src="Assets/hero/posters/eyebrow.jpg"
+                alt="Eyebrow embroidery at E-Perfect Beauty"
+                width="540"
+                height="674"
+                fetchpriority="high"
+                decoding="async"
+              />
               <video
                 id="heroVideo"
                 class="hero-video"
-                src="Assets/hero/eyebrow.mp4"
-                autoplay
                 muted
                 loop
                 playsinline
-                preload="auto"
+                preload="none"
+                width="540"
+                height="674"
                 aria-label="Hero treatment video"
               ></video>
             </div>
@@ -1063,6 +1418,8 @@
         <iframe
           title="E perfect eyebrow studio Sg on Google Maps"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.8056235953136!2d103.76471887496581!3d1.3899566985969216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1123c5dcea89%3A0x780e51f88bf18997!2sE%20perfect%20eyebrow%20studio%20Sg!5e1!3m2!1sen!2ssg!4v1775142874774!5m2!1sen!2ssg"
+          width="960"
+          height="600"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -1091,6 +1448,7 @@
             <li><a href="media.html">Media</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#visit">Visit &amp; map</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -1103,6 +1461,8 @@
             <li><a href="#service-korean-misty-eyebrow">Korean Misty Eyebrow</a></li>
             <li><a href="#service-face-lifting-youthful">Face lifting</a></li>
             <li><a href="pricing.html#facials">Facial category</a></li>
+            <li><a href="whitening-treatment.html">Needle-free whitening</a></li>
+            <li><a href="service-trust.html">Trust &amp; care</a></li>
             <li><a href="#services">All services</a></li>
           </ul>
         </nav>
@@ -1151,6 +1511,8 @@
         <img
           src="https://i0.wp.com/looktheluxury.com/wp-content/uploads/2023/09/FE476684-9B5C-4F59-AAA1-ED56C59AA830-768x1024.jpeg?resize=768%2C1024&ssl=1"
           alt="Brighter, more even skin after a needle-free whitening treatment"
+          width="768"
+          height="1024"
           loading="lazy"
           decoding="async"
         />
@@ -1198,11 +1560,33 @@
     const heroMainText = document.getElementById("heroText");
     const heroMedia = document.getElementById("heroMedia");
     const heroVideo = document.getElementById("heroVideo");
+    const heroPoster = document.getElementById("heroPoster");
     const heroStack = document.getElementById("heroStack");
 
     let activePillIndex = 0;
     let autoRotateId = null;
     const AUTO_ROTATE_MS = 5000;
+
+    function shouldPlayHeroVideo() {
+      const saveData = navigator.connection && navigator.connection.saveData;
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      return document.readyState === "complete" && !saveData && !reduceMotion;
+    }
+
+    function syncHeroVideo(pill) {
+      if (!heroVideo || !pill) return;
+      const posterSrc = pill.dataset.poster;
+      const videoSrc = pill.dataset.video;
+      if (posterSrc && heroPoster && heroPoster.getAttribute("src") !== posterSrc) {
+        heroPoster.src = posterSrc;
+        heroPoster.alt = pill.dataset.title || "Treatment preview";
+      }
+      if (!videoSrc || !shouldPlayHeroVideo()) return;
+      if (heroVideo.getAttribute("src") !== videoSrc) {
+        heroVideo.src = videoSrc;
+        heroVideo.play().catch(() => {});
+      }
+    }
 
     function activateServicePill(pill) {
       pills.forEach((p) => p.classList.remove("active"));
@@ -1211,7 +1595,6 @@
       const title = pill.dataset.title;
       const heroCopy = pill.dataset.heroText;
       const cardCopy = pill.dataset.cardText || pill.dataset.heroText;
-      const videoSrc = pill.dataset.video;
 
       heroTitle.style.opacity = 0;
       heroText.style.opacity = 0;
@@ -1223,11 +1606,7 @@
         heroTitle.textContent = title;
         heroText.textContent = cardCopy;
         heroMainText.textContent = heroCopy;
-        if (videoSrc && heroVideo) {
-          heroVideo.src = videoSrc;
-          heroVideo.load();
-          heroVideo.play().catch(() => {});
-        }
+        syncHeroVideo(pill);
 
         heroTitle.style.opacity = 1;
         heroText.style.opacity = 1;
@@ -1258,6 +1637,14 @@
     });
 
     startServiceAutoRotate();
+
+    if (document.readyState === "complete") {
+      syncHeroVideo(pills[activePillIndex]);
+    } else {
+      window.addEventListener("load", () => {
+        syncHeroVideo(pills[activePillIndex]);
+      });
+    }
 
     (function () {
       const drawer = document.getElementById("navMobileDrawer");
@@ -1377,7 +1764,6 @@
       heroStack.style.transform = "perspective(1200px) rotateX(0deg) rotateY(0deg)";
     });
   </script>
-  <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-  <script src="https://files.bpcontent.cloud/2026/05/22/15/20260522152436-D43GXFX0.js" defer></script>
+  <script src="js/deferred-third-party.js" defer></script>
 </body>
 </html>
