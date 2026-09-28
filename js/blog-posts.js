@@ -4,6 +4,45 @@
  */
 export const blogPosts = [
   {
+    id: "eyebrow-embroidery-first-visit",
+    title: "Your First Eyebrow Embroidery Visit, Step by Step",
+    authorName: "Evelyn",
+    createdAt: "2026-09-20T10:00:00+08:00",
+    image: "Assets/blog/misty_eyebrows.jpg",
+    tags: ["Eyebrows", "Embroidery"],
+    readTime: "9 min read",
+    href: "eyebrow-embroidery-first-visit.html",
+    content: `A first brow appointment at E-Perfect Beauty is a mapping visit as much as a pigment visit. Evelyn draws the shape to your bone structure and existing hair, and you approve it before any colour goes on.
+
+This guide covers the day itself, why brows look darker in week one, what to send on WhatsApp beforehand, and when previous embroidery can be assessed first.`,
+  },
+  {
+    id: "lip-embroidery-guide",
+    title: "Lip Embroidery for Pale or Uneven Lips",
+    authorName: "Evelyn",
+    createdAt: "2026-09-12T10:00:00+08:00",
+    image: "Assets/samples/lips/lipembroidery2.jpeg",
+    tags: ["Embroidery", "Lips"],
+    readTime: "8 min read",
+    href: "lip-embroidery-guide.html",
+    content: `Lip embroidery at the studio is a soft tint planned around your own lip shape and undertone, not a stencil and not the look of heavy lipstick.
+
+Read how a consult works, who it tends to suit, how colour settles, and what to photograph before you ask Evelyn whether it is the right option.`,
+  },
+  {
+    id: "hydra-facial-or-whitening",
+    title: "Hydra Facial or Needle-Free Whitening: Which Fits?",
+    authorName: "Evelyn",
+    createdAt: "2026-09-05T10:00:00+08:00",
+    image: "Assets/blog/hydration_facial.jpg",
+    tags: ["Facials"],
+    readTime: "8 min read",
+    href: "hydra-facial-or-whitening.html",
+    content: `Hydra facials are for dull, congested, or dehydrated skin. Needle-free whitening is for dark spots, melasma, sun spots, and acne marks. They are not two names for the same treatment.
+
+This guide explains how Evelyn tells them apart from a photo, and why a quote still waits until that conversation.`,
+  },
+  {
     id: "top-beauty-trends-bukit-panjang",
     title: "Top 5 Beauty Trends in Bukit Panjang This Year",
     authorName: "Evelyn",

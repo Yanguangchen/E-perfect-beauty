@@ -21,7 +21,7 @@ Common questions, answered on the homepage:
 - [Pricing](https://www.eperfectbeauty.com/pricing.html): Treatment menu. Every line is quoted on WhatsApp after a short consultation.
 - [About Evelyn](https://www.eperfectbeauty.com/about-us.html): Lead technician, natural-result philosophy, and the Segar Rd studio.
 - [Contact](https://www.eperfectbeauty.com/contact.html): WhatsApp, studio address, and map. 550B Segar Rd, Singapore 672550.
-- [Beauty journal](https://www.eperfectbeauty.com/blog.html): Care notes on brows, embroidery aftercare, local trends, and hydration facials.
+- [Beauty journal](https://www.eperfectbeauty.com/blog.html): Index of in-depth guides and shorter studio notes.
 - [Needle-free whitening](https://www.eperfectbeauty.com/whitening-treatment.html): Pigmentation treatment aimed at dark spots, melasma, sun spots, and acne marks without injections.
 - [Trust and care](https://www.eperfectbeauty.com/service-trust.html): How consultation, hygiene, and follow-up work for each treatment family.
 
@@ -40,6 +40,11 @@ Common questions, answered on the homepage:
 
 ## Journal
 
+These three guides each have their own URL and are listed in the sitemap. The shorter notes below only exist as sections on the journal page, so they are not separate sitemap URLs.
+
+- [Your first eyebrow embroidery visit](https://www.eperfectbeauty.com/eyebrow-embroidery-first-visit.html): Mapping, approval before pigment, darker colour in week one, and what to send on WhatsApp. Published 2026-09-20.
+- [Lip embroidery for pale or uneven lips](https://www.eperfectbeauty.com/lip-embroidery-guide.html): Soft tint planned around the client’s own lip. Not lipstick and not filler. Published 2026-09-12.
+- [Hydra facial or needle-free whitening](https://www.eperfectbeauty.com/hydra-facial-or-whitening.html): Texture and thirst versus visible pigment. Proof-point figures stay on the whitening page. Published 2026-09-05.
 - [Top 5 beauty trends in Bukit Panjang this year](https://www.eperfectbeauty.com/blog.html#top-beauty-trends-bukit-panjang): Natural “no-makeup” looks, Korean misty brows, and gentle lifting. Published 2026-06-25.
 - [Aftercare for eyebrow embroidery](https://www.eperfectbeauty.com/blog.html#aftercare-embroidery): Keep the area dry for 7–10 days, use the provided balm sparingly, and expect the colour to soften. Published 2026-06-12.
 - [Why Segar Road locals love Korean misty eyebrows](https://www.eperfectbeauty.com/blog.html#korean-misty-brows): Fine layered strokes mapped to bone structure. Published 2026-05-20.

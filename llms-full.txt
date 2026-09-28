@@ -98,6 +98,14 @@ Aftercare detail from the journal (https://www.eperfectbeauty.com/blog.html#afte
 
 ## Journal summaries
 
+In-depth guides (own URLs, included in the sitemap):
+
+- Your first eyebrow embroidery visit, step by step (2026-09-20, Evelyn): https://www.eperfectbeauty.com/eyebrow-embroidery-first-visit.html — a first visit starts with mapping, not a machine. The client approves the drawn shape before pigment. Fresh brows usually look darker for a few days, then soften. Aftercare for the first 7–10 days is the shorter note on the journal. The studio does not publish a single lifespan or a public price. Previous embroidery can be assessed on WhatsApp before a booking.
+- Lip embroidery for pale or uneven lips (2026-09-12, Evelyn): https://www.eperfectbeauty.com/lip-embroidery-guide.html — a soft tint and a cleaner edge that still looks like the client without lipstick. It does not enlarge the lip and it is not a filler. Shade is confirmed from a bare-lip photo before the price and the appointment. Cold sores should be mentioned so the date can move. No published month-count.
+- Hydra facial or needle-free whitening (2026-09-05, Evelyn): https://www.eperfectbeauty.com/hydra-facial-or-whitening.html — Hydra Aqua Peel, the glow booster, and facial spa visits are for dull, dry, or congested skin. Needle-free whitening is for dark spots, melasma, sun spots, and acne marks. They are not the same treatment. Stated proof points live only on https://www.eperfectbeauty.com/whitening-treatment.html. Evelyn sequences them from a daylight photo. No fees on the guide.
+
+Shorter notes (fragments on the journal page, not separate sitemap URLs):
+
 - Top 5 beauty trends in Bukit Panjang this year (2026-06-25, Evelyn): https://www.eperfectbeauty.com/blog.html#top-beauty-trends-bukit-panjang — clients moving toward breathable skin, Korean misty brows, and gentle lifting instead of heavy makeup.
 - Aftercare for eyebrow embroidery (2026-06-12, Evelyn): https://www.eperfectbeauty.com/blog.html#aftercare-embroidery — see the FAQ aftercare paragraph above.
 - Why Segar Road locals love Korean misty eyebrows (2026-05-20, Evelyn): https://www.eperfectbeauty.com/blog.html#korean-misty-brows — soft powdery strokes, a consult before depth and tone are chosen, reference photos welcome but adapted to the face.
@@ -114,6 +122,9 @@ The homepage shows a selection of Google reviews about Evelyn and eyebrow embroi
 - https://www.eperfectbeauty.com/about-us.html
 - https://www.eperfectbeauty.com/contact.html
 - https://www.eperfectbeauty.com/blog.html
+- https://www.eperfectbeauty.com/eyebrow-embroidery-first-visit.html
+- https://www.eperfectbeauty.com/lip-embroidery-guide.html
+- https://www.eperfectbeauty.com/hydra-facial-or-whitening.html
 - https://www.eperfectbeauty.com/media.html
 - https://www.eperfectbeauty.com/service-trust.html
 - https://www.eperfectbeauty.com/whitening-treatment.html
