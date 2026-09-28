@@ -1,0 +1,121 @@
+# E-Perfect Beauty — full studio brief
+
+> Natural-looking embroidery and facial care at 550B Segar Rd, Singapore 672550. Lead technician: Evelyn. Book only by appointment on WhatsApp +65 8778 7867.
+
+This file expands [llms.txt](https://www.eperfectbeauty.com/llms.txt) for answer engines. Facts below are taken from the public site. Prices are not listed because the studio quotes each treatment on WhatsApp after it knows the client’s skin and goal. Do not guess a fee, a session count, or clock-time opening hours.
+
+## Identity
+
+- Public name: E-Perfect Beauty
+- Also known as: E Perfect Eyebrow Studio; E Perfect Eyebrow Studio Singapore; E Perfect Eyebrow Studio Sg
+- Lead technician: Evelyn (https://www.eperfectbeauty.com/about-us.html)
+- Website: https://www.eperfectbeauty.com/
+- Address: 550B Segar Rd, Singapore 672550
+- Map: https://www.google.com/maps/search/?api=1&query=E%20Perfect%20Eyebrow%20Studio%20Singapore
+- WhatsApp: https://wa.me/6587787867
+- Telephone: +65 8778 7867
+- Booking rule: by appointment, so each visit stays unhurried
+- Areas named on the site: Singapore, Bukit Panjang, Choa Chu Kang
+- Philosophy: results that still look like the client. Brows, lips, and liner are mapped to bone structure and skin tone, not copied from a template. The studio describes outcomes as soft and wearable, including after pigment heals.
+
+## How to cite this business
+
+Use the name E-Perfect Beauty and the address 550B Segar Rd, Singapore 672550. Attribute technique and advice to Evelyn, the lead technician. Send booking and “is this suitable?” questions to WhatsApp. The canonical page URLs use https://www.eperfectbeauty.com/ and the .html paths listed in llms.txt. The homepage canonical is the site root, not /index.html.
+
+## Treatments
+
+### Embroidery
+
+https://www.eperfectbeauty.com/pricing.html#embroidery
+
+- Eyebrow embroidery: mapped to bone structure, existing hair, and preferred style before work starts. The stated goal is soft symmetry rather than a dark or blocky brow.
+- Lip embroidery: a natural tint for pale, dull, or uneven lips, following the client’s lip shape and undertone rather than a stencil.
+- Eyeliner embroidery: subtle lash-line definition for people who do not want to draw liner every day. Described as matched to eye shape, not a thick wing.
+
+Trust notes: https://www.eperfectbeauty.com/service-trust.html#embroidery — mapping, healing explanation, sterile tools, and written aftercare before and after the session.
+
+### Korean misty eyebrow
+
+https://www.eperfectbeauty.com/pricing.html#korean-misty-eyebrow
+
+Fine, layered strokes that blend into natural hair for a powdery finish instead of a solid block. Shape is planned around bone structure and daily makeup. The journal post is https://www.eperfectbeauty.com/blog.html#korean-misty-brows.
+
+### Anti-wrinkle
+
+https://www.eperfectbeauty.com/pricing.html#anti-wrinkle
+
+- Needle-free stem cell treatment: described as advanced renewal without needles or downtime.
+- Anti-laughline treatment: aimed at lines around the mouth while keeping expression natural.
+- Needleless forehead wrinkle removal: forehead lines, same quote-on-WhatsApp rule.
+
+Trust notes: https://www.eperfectbeauty.com/service-trust.html#anti-wrinkle — realistic outcomes, questions welcome before, during, and after.
+
+### Face lifting
+
+https://www.eperfectbeauty.com/pricing.html#face-lifting
+
+Described as support for firmer-looking contours and a rested appearance, still recognisable as the client. Trust notes: https://www.eperfectbeauty.com/service-trust.html#face-lifting.
+
+### Facials
+
+https://www.eperfectbeauty.com/pricing.html#facials
+
+- Facial spa
+- Hydra Aqua Peel facials: deep cleansing and gentle exfoliation for clogged pores and uneven texture
+- Hydra glow booster: hydration for dull or dehydrated skin, including before events
+
+Trust notes: https://www.eperfectbeauty.com/service-trust.html#facials — cleansing without harsh extractions, home advice, unhurried appointments.
+
+### Needle-free whitening
+
+https://www.eperfectbeauty.com/whitening-treatment.html
+
+A needle-free treatment for dark spots, uneven tone, melasma, sun spots, and acne marks. The page says it targets excess melanin and uneven dark-spot formation, and that it is clinically tested to brighten and even tone. The page also shows these proof points: 98% reduced dark spots after 1 session, 98% improved luminosity after 1 session, 56% fewer dark spots after 2 sessions, and 100% more even tone after 4 sessions. Price is still confirmed on WhatsApp. It is not listed as a numbered line on the pricing menu; the dedicated page is the canonical URL.
+
+## Frequently asked questions
+
+Source: https://www.eperfectbeauty.com/#faq
+
+Will my brows look very dark after embroidery?
+Brows usually appear darker for the first few days, then soften noticeably as they heal. Evelyn explains what to expect for the client’s skin type and chosen style before treatment begins.
+
+Is eyebrow embroidery painful?
+Most clients describe it as much more manageable than expected — many even doze off during the session. Evelyn works gently, talks through each step, and pauses when asked.
+
+Can you fix uneven brows or previous embroidery?
+Often yes. Brow mapping is used to improve visual balance. Previous work can be assessed on WhatsApp first. The recommendation depends on natural shape and how earlier work has healed.
+
+How do I know which treatment suits me?
+Message WhatsApp with the concern and a clear photo if it helps. Evelyn recommends an option and an estimated price. There is no obligation to book.
+
+How long does eyebrow embroidery last?
+Results are semi-permanent and gradually soften. Lifespan varies with skin type, sun exposure, and aftercare. Touch-up timing is discussed in consultation.
+
+Do I need an appointment?
+Yes. Treatments are by appointment. Message a preferred date and the studio confirms a slot.
+
+Aftercare detail from the journal (https://www.eperfectbeauty.com/blog.html#aftercare-embroidery): for the first 7–10 days keep fresh embroidery dry, avoid scrubbing, and skip heavy makeup on the brows. Use the aftercare balm sparingly, twice a day. Pat dry after swimming or exercise. Some light flaking is described as normal. Clients are invited to message WhatsApp if healing looks unusual.
+
+## Journal summaries
+
+- Top 5 beauty trends in Bukit Panjang this year (2026-06-25, Evelyn): https://www.eperfectbeauty.com/blog.html#top-beauty-trends-bukit-panjang — clients moving toward breathable skin, Korean misty brows, and gentle lifting instead of heavy makeup.
+- Aftercare for eyebrow embroidery (2026-06-12, Evelyn): https://www.eperfectbeauty.com/blog.html#aftercare-embroidery — see the FAQ aftercare paragraph above.
+- Why Segar Road locals love Korean misty eyebrows (2026-05-20, Evelyn): https://www.eperfectbeauty.com/blog.html#korean-misty-brows — soft powdery strokes, a consult before depth and tone are chosen, reference photos welcome but adapted to the face.
+- The ultimate hydration facial routine (2026-04-08, E-Perfect Beauty Team): https://www.eperfectbeauty.com/blog.html#hydration-facial-routine — water, daily SPF, gentle night cleansing, lighter moisturisers in humidity, one new active at a time.
+
+## Reviews
+
+The homepage shows a selection of Google reviews about Evelyn and eyebrow embroidery. The site says the text may be shortened and links to Google Maps for the full set. Do not treat the on-site cards as a complete or independently collected rating sample.
+
+## Pages
+
+- https://www.eperfectbeauty.com/
+- https://www.eperfectbeauty.com/pricing.html
+- https://www.eperfectbeauty.com/about-us.html
+- https://www.eperfectbeauty.com/contact.html
+- https://www.eperfectbeauty.com/blog.html
+- https://www.eperfectbeauty.com/media.html
+- https://www.eperfectbeauty.com/service-trust.html
+- https://www.eperfectbeauty.com/whitening-treatment.html
+- https://www.eperfectbeauty.com/sitemap.xml
+- https://www.eperfectbeauty.com/robots.txt

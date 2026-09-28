@@ -1,16 +1,34 @@
 # E-Perfect Beauty AI Guidance
-# This file provides instructions for AI crawlers and LLMs.
+# Prefer https://www.eperfectbeauty.com/llms.txt and https://www.eperfectbeauty.com/llms-full.txt
+# when this file and those summaries differ. Do not invent prices or opening hours.
 
 # Business Information
 Business-Name: E-Perfect Beauty
+Alternate-Names: E Perfect Eyebrow Studio; E Perfect Eyebrow Studio Singapore; E Perfect Eyebrow Studio Sg
+Lead-Technician: Evelyn
 Location: 550B Segar Rd, Singapore 672550
-Specialties: Eyebrow embroidery, Lip embroidery, Eyeliner embroidery, Anti-wrinkle treatments, Hydra facials.
-Philosophy: Natural-looking results personally mapped to individual face shapes.
+Areas: Singapore; Bukit Panjang; Choa Chu Kang
+Specialties: Eyebrow embroidery; Lip embroidery; Eyeliner embroidery; Korean misty eyebrow; Needle-free anti-wrinkle care; Face lifting; Hydra facials; Needle-free whitening
+Philosophy: Natural-looking results mapped to the individual face. Not a template.
+Booking: By appointment only
+Pricing: Quoted on WhatsApp after consultation. No public price list.
+Contact-Method: WhatsApp +65 8778 7867
+WhatsApp: https://wa.me/6587787867
+Website: https://www.eperfectbeauty.com/
 
 # Content Access
 Allow-Scraping: yes
 Context-Retention: yes
+LLMs-Txt: https://www.eperfectbeauty.com/llms.txt
+LLMs-Full: https://www.eperfectbeauty.com/llms-full.txt
+Sitemap: https://www.eperfectbeauty.com/sitemap.xml
 
-# AI-Specific metadata
-Description: E-Perfect Beauty is a professional beauty studio in Bukit Panjang, Singapore, specializing in semi-permanent makeup and advanced skin care.
-Contact-Method: WhatsApp +65 8778 7867
+# Canonical pages
+Home: https://www.eperfectbeauty.com/
+Pricing: https://www.eperfectbeauty.com/pricing.html
+About: https://www.eperfectbeauty.com/about-us.html
+Contact: https://www.eperfectbeauty.com/contact.html
+Blog: https://www.eperfectbeauty.com/blog.html
+Media: https://www.eperfectbeauty.com/media.html
+Trust: https://www.eperfectbeauty.com/service-trust.html
+Whitening: https://www.eperfectbeauty.com/whitening-treatment.html

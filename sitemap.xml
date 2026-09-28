@@ -1,51 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.eperfectbeauty.com/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/evelyn.jpg</image:loc>
+      <image:title>Evelyn, lead technician at E-Perfect Beauty</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/hero/posters/eyebrow.jpg</image:loc>
+      <image:title>Eyebrow embroidery at E-Perfect Beauty</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.eperfectbeauty.com/pricing.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.eperfectbeauty.com/whitening-treatment.html</loc>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.eperfectbeauty.com/about-us.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.eperfectbeauty.com/media.html</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/evelyn.jpg</image:loc>
+      <image:title>Evelyn, lead beauty technician</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.eperfectbeauty.com/contact.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.eperfectbeauty.com/blog.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/blog/tampines_beauty.jpg</image:loc>
+      <image:title>Top 5 beauty trends in Bukit Panjang this year</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/blog/eyebrow_aftercare.jpg</image:loc>
+      <image:title>Aftercare for eyebrow embroidery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/blog/misty_eyebrows.jpg</image:loc>
+      <image:title>Korean misty eyebrows</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/blog/hydration_facial.jpg</image:loc>
+      <image:title>Hydration facial routine</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.eperfectbeauty.com/service-trust.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.72</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.eperfectbeauty.com/whitening-treatment.html</loc>
-    <lastmod>2026-05-06</lastmod>
+    <loc>https://www.eperfectbeauty.com/media.html</loc>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.65</priority>
+    <image:image>
+      <image:loc>https://www.eperfectbeauty.com/Assets/samples/lips/lipEmboridery.jpeg</image:loc>
+      <image:title>Lip embroidery sample</image:title>
+    </image:image>
   </url>
 </urlset>
