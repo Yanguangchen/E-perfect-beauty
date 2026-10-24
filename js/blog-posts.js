@@ -4,6 +4,19 @@
  */
 export const blogPosts = [
   {
+    id: "eyeliner-embroidery-first-visit",
+    title: "Your First Eyeliner Embroidery Visit",
+    authorName: "Evelyn",
+    createdAt: "2026-10-25T10:00:00+08:00",
+    image: "Assets/blog/misty_eyebrows.jpg",
+    tags: ["Embroidery", "Eyeliner"],
+    readTime: "7 min read",
+    href: "eyeliner-embroidery-first-visit.html",
+    content: `Eyeliner embroidery at the studio is a fine lash line mapped to your eye, not a thick wing. Evelyn confirms the plan, and the price, on WhatsApp before you book.
+
+This guide covers what to photograph, how the visit differs from brow and lip embroidery, and what to expect while the line settles.`,
+  },
+  {
     id: "eyebrow-embroidery-first-visit",
     title: "Your First Eyebrow Embroidery Visit, Step by Step",
     authorName: "Evelyn",

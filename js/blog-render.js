@@ -57,6 +57,12 @@ const RELATED_LINKS = {
     ["pricing.html#embroidery", "Embroidery pricing"],
     ["eyebrow-embroidery-first-visit.html", "First brow visit"],
   ],
+  "eyeliner-embroidery-first-visit": [
+    ["pricing.html#embroidery", "Embroidery pricing"],
+    ["eyebrow-embroidery-first-visit.html", "First brow visit"],
+    ["lip-embroidery-guide.html", "Lip embroidery guide"],
+    ["contact.html", "Contact the studio"],
+  ],
   "hydra-facial-or-whitening": [
     ["whitening-treatment.html", "Needle-free whitening"],
     ["pricing.html#facials", "Facial pricing"],
