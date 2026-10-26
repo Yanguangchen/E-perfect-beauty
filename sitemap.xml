@@ -67,6 +67,12 @@
   <!-- In-depth guides have their own HTML URLs, so they are listed.
        Short journal notes only exist as hash fragments on blog.html and are not separate locs. -->
   <url>
+    <loc>https://www.eperfectbeauty.com/face-lifting-first-visit.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://www.eperfectbeauty.com/eyebrow-embroidery-first-visit.html</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>

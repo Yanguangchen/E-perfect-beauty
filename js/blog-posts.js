@@ -4,6 +4,19 @@
  */
 export const blogPosts = [
   {
+    id: "face-lifting-first-visit",
+    title: "A First Face-Lifting Visit with Evelyn",
+    authorName: "Evelyn",
+    createdAt: "2026-10-26T10:00:00+08:00",
+    image: "Assets/blog/hydration_facial.jpg",
+    tags: ["Facials", "Face lifting"],
+    readTime: "6 min read",
+    href: "face-lifting-first-visit.html",
+    content: `Face lifting at E-Perfect Beauty is contour-focused care for a rested, firmer-looking appearance. It is booked separately from anti-wrinkle care and from a Hydra facial.
+
+Evelyn confirms the price on WhatsApp after a no-obligation consultation. There is no fixed fee on the website. The visit is by appointment at 550B Segar Rd.`,
+  },
+  {
     id: "eyebrow-embroidery-first-visit",
     title: "Your First Eyebrow Embroidery Visit, Step by Step",
     authorName: "Evelyn",
