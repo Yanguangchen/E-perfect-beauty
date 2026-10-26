@@ -47,6 +47,11 @@ const RELATED_LINKS = {
     ["hydra-facial-or-whitening.html", "Hydra facial or whitening"],
     ["contact.html", "Book a facial"],
   ],
+  "face-lifting-first-visit": [
+    ["pricing.html#face-lifting", "Face lifting pricing"],
+    ["pricing.html#anti-wrinkle", "Anti-wrinkle pricing"],
+    ["hydra-facial-or-whitening.html", "Hydra facial or whitening"],
+  ],
   "eyebrow-embroidery-first-visit": [
     ["blog.html#aftercare-embroidery", "7–10 day aftercare note"],
     ["pricing.html#embroidery", "Embroidery pricing"],
